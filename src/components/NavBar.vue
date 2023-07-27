@@ -14,7 +14,7 @@ export default {
         return {
             pages: [
             {
-                link : {text:'메인', url: '/'},
+                link : {text:'홈', url: '/'},
                 pageTitle: 'MainPage',
                 img: '../assets'
             },
