@@ -54,13 +54,14 @@ export default {
     justify-content: center;
     position: fixed;
     bottom: 8px;
+    background-color: white;
     
     width: 100vw;
 }
 
 .nav-content{
-    width: 20%;
-    
+    margin-top: 8px;
+    width: 20%;    
 }
 
 </style>
