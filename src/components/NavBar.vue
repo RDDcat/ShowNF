@@ -50,7 +50,7 @@ export default {
 .nav {
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     background-color: white;
     
@@ -60,7 +60,7 @@ export default {
 .nav-content{
     justify-content: center;
     margin-top: 8px;
-    width: 20%;    
+    width: 20%;
 }
 
 </style>

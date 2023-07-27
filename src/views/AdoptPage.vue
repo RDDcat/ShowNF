@@ -4,23 +4,37 @@
         <img class='top-search-icon' src="../assets/sample.png" width="24">
     </div>
     <div class='banner'>
-        <img class='banner-content' src="../assets/sample.png">
+        <div class='banner-content'>
+            <img class='banner-content-imgtag' src="../assets/sample.png">
+        </div>
+    </div>
     <div class='category-twoline'>
         <div class="category">
             <div class="category-content" v-for="(category, index) in detailCategories_1" :key="index" @click="console.log(category)">
-                <img src="../assets/sample.png" width="44">
+                <img class="category-content-imgtag" src="../assets/sample.png">
                 <div class="category-content-text">{{category.text}}</div>
             </div>
         </div>
         <div class="category">
             <div class="category-content" v-for="(category, index) in detailCategories_2" :key="index" @click="console.log(category)">
-                <img src="../assets/sample.png" width="44">
+                <img class="category-content-imgtag" src="../assets/sample.png" >
                 <div class="category-content-text">{{category.text}}</div>
             </div>
-        </div>        
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-card">
+            <div class="content-card-img"><img class="content-card-imgtag" src="../assets/sample.png"></div>
+            <div class="content-card-price">175,000원</div>
+            <div class="content-card-title">비어디 드래곤 (bearded dragon)</div>
+        </div>
+        <div class="content-card">
+            <div class="content-card-img"><img class="content-card-imgtag" src="../assets/sample.png"></div>
+            <div class="content-card-price">175,000원</div>
+            <div class="content-card-title">비어디 드래곤 (bearded dragon)</div>
+        </div>
     </div>
 
-    </div>
 </template>
 <script>
 export default{
@@ -65,9 +79,13 @@ export default{
 }
 
 .banner-content{
-    object-fit: cover;
     width: 100%;
     height: 34vh;
+}
+
+.banner-content-imgtag{
+    width: 100%;
+    height: 100%;
 }
 
 .category{
@@ -77,8 +95,39 @@ export default{
 .category-content{
     margin: 8px;
 }
+
+.category-content-imgtag{
+    width: 44px;
+}
+
 .category-content-text{
     font-size: 8px;
     text-align: center;
+}
+
+.content{
+    display: flex;
+}
+
+.content-card{
+    margin: auto;    
+}
+
+.content-card-img{
+    width: 40vw;
+    height: 24vh;
+}
+
+.content-card-imgtag{
+    width: 100%;
+    height: 100%;
+}
+
+.content-card-price{
+    font-size: 10px;
+}
+
+.content-card-title{
+    font-size: 8px;
 }
 </style>
