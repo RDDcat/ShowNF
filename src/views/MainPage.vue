@@ -10,7 +10,6 @@
     </div>
     <div class='banner'>
         <img class='banner-content' src="../assets/sample.png">
-
     </div>
     <div class='category-twoline'>
         <div class="category">
@@ -94,7 +93,7 @@ export default{
 }
 
 </script>
-<style>
+<style scoped>
 .category{
     display: flex;
 }

@@ -1,10 +1,8 @@
 <template>
 <nav class="nav">
     <div class="nav-content" v-for="(page, index) in pages" :key="index" @click="movePage(page.link.url)">
-        <div>
-            <img src="../assets/sample.png" width="32" height="32">
-            <div>{{ page.link.text }}</div>
-        </div>
+        <img src="../assets/sample.png" width="32" height="32">
+        <div>{{ page.link.text }}</div>
     </div>
 </nav>
 </template>
@@ -53,13 +51,14 @@ export default {
     display: flex;
     justify-content: center;
     position: fixed;
-    bottom: 8px;
+    bottom: 0;
     background-color: white;
     
     width: 100vw;
 }
 
 .nav-content{
+    justify-content: center;
     margin-top: 8px;
     width: 20%;    
 }
