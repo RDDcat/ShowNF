@@ -2,7 +2,7 @@
 <nav class="nav">
     <div class="nav-content" v-for="(page, index) in pages" :key="index" @click="movePage(page.link.url)">
         <div>
-            <img src="">
+            <img src="../assets/sample.png" width="32" height="32">
             <div>{{ page.link.text }}</div>
         </div>
     </div>
@@ -14,24 +14,29 @@ export default {
         return {
             pages: [
             {
-            link : {text:'메인', url: '/'},
-            pageTitle: 'MainPage'
+                link : {text:'메인', url: '/'},
+                pageTitle: 'MainPage',
+                img: '../assets'
             },
             {
-            link : {text:'입양', url: '/adopt'},
-            pageTitle: 'AdoptPage'
+                link : {text:'입양', url: '/adopt'},
+                pageTitle: 'AdoptPage',
+                img: '../assets'
             },
             {
-            link : {text:'커뮤', url: '/community'},
-            pageTitle: 'CommunityPage'
+                link : {text:'커뮤', url: '/community'},
+                pageTitle: 'CommunityPage',
+                img: '../assets'
             },
             {
-            link : {text:'좋아', url: '/swipe'},
-            pageTitle: 'SwipePage'
+                link : {text:'좋아', url: '/swipe'},
+                pageTitle: 'SwipePage',
+                img: '../assets'
             },
             {
-            link : {text:'마이', url: '/my'},
-            pageTitle: 'Mypage'
+                link : {text:'마이', url: '/my'},
+                pageTitle: 'Mypage',
+                img: '../assets'
             },
         ]
         }
