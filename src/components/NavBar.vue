@@ -1,10 +1,10 @@
 <template>
-<nav class="nav">
+<v-bottom-navigation class="nav">
     <div class="nav-content" v-for="(page, index) in pages" :key="index" @click="movePage(page.link.url)">
         <img src="../assets/sample.png" width="32" height="32">
         <div>{{ page.link.text }}</div>
     </div>
-</nav>
+</v-bottom-navigation>
 </template>
 <script>
 export default {
@@ -50,7 +50,7 @@ export default {
 .nav {
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: white;
     

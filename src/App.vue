@@ -1,6 +1,6 @@
 <template>  
-  <router-view></router-view>
   <NavBar></NavBar>
+  <router-view></router-view>
   
 </template>
 

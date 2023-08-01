@@ -5,7 +5,6 @@ import CommunityPage from './views/CommunityPage'
 import SwipePage from './views/SwipePage'
 import MyPage from './views/MyPage'
 // import BasePage from './views/BasePage';
-import SecondPage from './views/SecondPage';
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -15,8 +14,6 @@ const router = createRouter({
         { path: "/community", component: CommunityPage},
         { path: "/swipe", component: SwipePage},
         { path: "/my", component: MyPage},
-        { path: "/second", component: SecondPage}
-        
     ]
 });
 
