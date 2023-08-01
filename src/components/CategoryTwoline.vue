@@ -59,8 +59,11 @@ export default {
 .category-content{
     margin: 8px;
 }
+
 .category-content-text{
     font-size: 8px;
     text-align: center;
 }
+
+
 </style>

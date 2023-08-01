@@ -87,9 +87,8 @@
     display: flex;
 }
 .board-link{
-    position: absolute;
-    right: 4px;
     width: 32px;
+    margin-left: auto;
 }
 .board-link img{
     width: 100%;
