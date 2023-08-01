@@ -31,7 +31,7 @@ export default{
             const dummyContents = [
                 {title:'최고의 귀염둥이!!'},
                 {title:'내 친구를 찾아보자'},
-                {title:'설마 여기까지 보겠어?'},
+                {title:'새로운 타이틀 1'},
                 {title:'설마 여기까지 보겠어22?'},                
                 {title:'설마 여기까지 보겠어333?'},
             ]
