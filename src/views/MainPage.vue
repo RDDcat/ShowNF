@@ -1,11 +1,8 @@
 <template>
-    <div class='top'>
-        <img alt="Vue logo" src="../assets/logo.png" width='32'>
-    </div>
+    <TopMain/>
     <CategoryBasic />
-    <MainBanner />
+    <BannerMain />
     <CategoryTwoline />
-    
     <div class='content-list'>
         <div class="content" v-for="(content, index) in contents" :key="index">
             <div class="content-title">
@@ -16,18 +13,20 @@
                 <img src="../assets/sample.png" width="165" height="195">
                 <img src="../assets/sample.png" width="165" height="195">
             </div>
-        </div>        
+        </div>
     </div>
 </template>
 <script>
-import CategoryTwoline from '../components/CategoryTwoline.vue'
+import TopMain from '../components/TopMain.vue'
 import CategoryBasic from '../components/CategoryBasic.vue'
-import MainBanner from '../components/MainBanner.vue'
+import BannerMain from '../components/BannerMain.vue'
+import CategoryTwoline from '../components/CategoryTwoline.vue'
 
 export default{
     components: {
+        TopMain,
         CategoryBasic,
-        MainBanner,
+        BannerMain,
         CategoryTwoline,
     },
     data(){

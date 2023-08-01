@@ -1,11 +1,8 @@
 <!-- 분양 & shop 페이지 -->
-<template>
-    <div class="top">
-        <img class='top-search-icon' src="../assets/sample.png" width="24">
-    </div>
-    <AdoptBanner/>    
-    <CategoryTwoline />
-    
+<template>    
+    <BannerAdopt/>    
+    <CategoryTwoline/>
+
     <div class="content">
         <div class="content-card">
             <div class="content-card-img"><img class="content-card-imgtag" src="../assets/sample.png"></div>
@@ -22,21 +19,18 @@
 </template>
 <script>
 import CategoryTwoline from '../components/CategoryTwoline.vue'
-import AdoptBanner from '../components/AdoptBanner.vue'
+import BannerAdopt from '../components/BannerAdopt.vue'
 
 
 export default{
     components: {
-        AdoptBanner,
+        BannerAdopt,
         CategoryTwoline,
     },
 }
 </script>
 <style scoped>
-.top-search-icon{
-    right: 4px;
-    position: absolute;
-}
+
 
 
 .category{
