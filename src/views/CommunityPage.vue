@@ -1,80 +1,29 @@
 <!-- 커뮤니티 페이지 -->
 <template>
     <div class="contents">
-        <div class="board">
-            <div class="board-title">
-                <div class="board-title-text">HOT 게시글</div>
-                <div class="board-link"><img src="../assets/sample.png"></div>
-            </div>
-            <div class="board-cards">
-                <div class="board-card">
-                    <img src="../assets/sample.png">
-                    <h2>귀여움에 빠져랏</h2>
-                    <div class="user-name">백설</div>
-                </div>
-                <div class="board-card">
-                    <img src="../assets/sample.png">
-                    <h2>귀여움에 빠져랏</h2>
-                    <div class="user-name">백설</div>
-                </div>
-                <div class="board-card">
-                    <img src="../assets/sample.png">
-                    <h2>귀여움에 빠져랏</h2>
-                    <div class="user-name">백설</div>
-                </div>
-            </div>
-        </div>
-        <div class="board">
-            <div class="board-title">
-                <div class="board-title-text">HOT 게시글</div>
-                <div class="board-link"><img src="../assets/sample.png"></div>
-            </div>
-            <div class="board-cards">
-                <div class="board-card">
-                    <img src="../assets/sample.png">
-                    <h2>귀여움에 빠져랏</h2>
-                    <div class="user-name">백설</div>
-                </div>
-                <div class="board-card">
-                    <img src="../assets/sample.png">
-                    <h2>귀여움에 빠져랏</h2>
-                    <div class="user-name">백설</div>
-                </div>
-                <div class="board-card">
-                    <img src="../assets/sample.png">
-                    <h2>귀여움에 빠져랏</h2>
-                    <div class="user-name">백설</div>
-                </div>
-            </div>
-        </div>
-        <div class="board">
-            <div class="board-title">
-                <div class="board-title-text">HOT 게시글</div>
-                <div class="board-link"><img src="../assets/sample.png"></div>
-            </div>
-            <div class="board-cards">
-                <div class="board-card">
-                    <img src="../assets/sample.png">
-                    <h2>귀여움에 빠져랏</h2>
-                    <div class="user-name">백설</div>
-                </div>
-                <div class="board-card">
-                    <img src="../assets/sample.png">
-                    <h2>귀여움에 빠져랏</h2>
-                    <div class="user-name">백설</div>
-                </div>
-                <div class="board-card">
-                    <img src="../assets/sample.png">
-                    <h2>귀여움에 빠져랏</h2>
-                    <div class="user-name">백설</div>
-                </div>
-            </div>
-        </div>
+        <ContentBoard/>
     </div>
 
 </template>
 <script>
+import ContentBoard from '../components/ContentBoard.vue'
 
+export default{
+    components: {
+        ContentBoard,
+    },
+    data(){
+        return {
+            
+        }
+    },
+    methods: {
+        
+    },
+    mounted() {
+        
+    },
+};
 </script>
 <style scoped>
 .board{
