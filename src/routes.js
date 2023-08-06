@@ -4,16 +4,31 @@ import AdoptPage from './views/AdoptPage'
 import CommunityPage from './views/CommunityPage'
 import SwipePage from './views/SwipePage'
 import MyPage from './views/MyPage'
-// import BasePage from './views/BasePage';
+import MyPageMain from './components/MyPageMain'
+import MyPageAdopt from './components/MyPageAdopt'
+import MyPageAlbum from './components/MyPageAlbum'
+import MyPageDealing from './components/MyPageDealing'
+
 
 const router = createRouter({
     history: createWebHashHistory(),
     routes:[
         { path: "/", component: MainPage},
+
         { path: "/adopt", component: AdoptPage},
+
         { path: "/community", component: CommunityPage},
+
         { path: "/swipe", component: SwipePage},
-        { path: "/my", component: MyPage},
+
+        { path: "/my", component: MyPage, children: [
+            { path: "main", component: MyPageMain},
+            { path: "adopt", component: MyPageAdopt},
+            { path: "album", component: MyPageAlbum},
+            { path: "dealing", component: MyPageDealing},
+        ]},
+        
+
     ]
 });
 

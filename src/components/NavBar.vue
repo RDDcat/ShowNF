@@ -32,7 +32,7 @@ export default {
                 img: '../assets'
             },
             {
-                link : {text:'마이', url: '/my'},
+                link : {text:'마이', url: '/my/main'},
                 pageTitle: 'Mypage',
                 img: '../assets'
             },

@@ -17,9 +17,14 @@
 
     </div>
     <!-- 토글메뉴에 따라 달라지는 컨텐츠 -->
+    <router-view/>
 </template>
 <script>
-
+// import {RouterView} from 'vue-router'
+export default{
+    components: {
+    },
+}
 </script>
 <style scoped>
 .top-menu{
