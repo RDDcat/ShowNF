@@ -12,12 +12,12 @@ export default {
         return {
             pages: [
             {
-                link : {text:'홈', url: '/'},
+                link : {text:'홈', url: '/my/main'},
                 pageTitle: 'MainPage',
                 img: '../assets'
             },
             {
-                link : {text:'입양', url: '/adopt'},
+                link : {text:'입양', url: '/my/adopt'},
                 pageTitle: 'AdoptPage',
                 img: '../assets'
             },
