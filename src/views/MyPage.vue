@@ -17,14 +17,23 @@
 
     </div>
     <!-- 토글메뉴에 따라 달라지는 컨텐츠 -->
+    <NavBarProfile/>
     <router-view/>
+
 </template>
 <script>
-// import {RouterView} from 'vue-router'
+import NavBarProfile from '../components/NavBarProfile'
+
 export default{
     components: {
+        NavBarProfile,
     },
-}
+    data(){
+        return {
+            contents: [],
+        }
+    },
+};
 </script>
 <style scoped>
 .top-menu{
