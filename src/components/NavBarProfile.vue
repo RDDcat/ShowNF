@@ -1,7 +1,6 @@
 <template>
 <v-bottom-navigation class="nav">
     <div class="nav-content" v-for="(page, index) in pages" :key="index" @click="movePage(page.link.url)">
-        <img src="../assets/sample.png" width="32" height="32">
         <div>{{ page.link.text }}</div>
     </div>
 </v-bottom-navigation>
@@ -13,28 +12,19 @@ export default {
             pages: [
             {
                 link : {text:'홈', url: '/my/main'},
-                pageTitle: 'MainPage',
-                img: '../assets'
+                pageTitle: 'main',
             },
             {
                 link : {text:'입양', url: '/my/adopt'},
-                pageTitle: 'AdoptPage',
-                img: '../assets'
+                pageTitle: 'adopt',
             },
             {
-                link : {text:'커뮤', url: '/community'},
-                pageTitle: 'CommunityPage',
-                img: '../assets'
+                link : {text:'커뮤', url: '/my/album'},
+                pageTitle: 'album',
             },
             {
-                link : {text:'좋아', url: '/swipe'},
-                pageTitle: 'SwipePage',
-                img: '../assets'
-            },
-            {
-                link : {text:'마이', url: '/my'},
-                pageTitle: 'Mypage',
-                img: '../assets'
+                link : {text:'좋아', url: '/my/dealing'},
+                pageTitle: 'dealing',
             },
         ]
         }
@@ -46,21 +36,18 @@ export default {
     },
 }
 </script>
-<style>
+<style scoped>
 .nav {
     display: flex;
     justify-content: center;
-    position: fixed;
-    bottom: 0;
     background-color: white;
-    
     width: 100vw;
 }
 
 .nav-content{
     justify-content: center;
     margin-top: 8px;
-    width: 20%;
+    width: 25%;
     text-align: center;
 }
 
