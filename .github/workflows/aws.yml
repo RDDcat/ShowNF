@@ -5,10 +5,13 @@ on:
       - main
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
         uses: actions/checkout@main
+
+      - name: install
+        run: npm install
         
       - name: Build
         run: npm run build
