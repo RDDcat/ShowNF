@@ -11,19 +11,19 @@ export default {
         return {
             pages: [
             {
-                link : {text:'홈', url: '/my/main'},
+                link : {text:'내 게시글', url: '/my/main'},
                 pageTitle: 'main',
             },
             {
-                link : {text:'입양', url: '/my/adopt'},
+                link : {text:'분양', url: '/my/adopt'},
                 pageTitle: 'adopt',
             },
             {
-                link : {text:'커뮤', url: '/my/album'},
+                link : {text:'내 앨범', url: '/my/album'},
                 pageTitle: 'album',
             },
             {
-                link : {text:'좋아', url: '/my/dealing'},
+                link : {text:'거래 내역', url: '/my/dealing'},
                 pageTitle: 'dealing',
             },
         ]
