@@ -27,11 +27,9 @@
 .content{
     display: flex;
     flex-wrap:wrap;
-    justify-content: center;
 }
 .item{
     width: 33vw;
-    height: 33vw;
 }
 .item-img{
     object-fit: contain;
