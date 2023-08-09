@@ -2,7 +2,7 @@
 <template>
     <div class="top">
         <div class="top-title">마이페이지</div>
-        <img class="top-menu" src="../assets/sample.png">
+        <img class="top-menu" src="../assets/sample.png" @click="this.isMenu=true">
     </div>
     <div class="pofile">
         <div class="pofile-static">
@@ -75,6 +75,23 @@
     <hr />
     <router-view/>
 
+    <!-- -->
+    <div class="modal-menu" v-if="isMenu == true">
+        <div class="modal-top">
+            <img class="modal-img" src="../assets/sample.png" @click="this.isMenu=false">
+        </div>
+        <div class="modal-contents">
+            <div class="modal-content">프로필 변경</div>
+            <div class="modal-content">알림설정</div>
+            <div class="modal-content">포인트 내역</div>
+            <div class="modal-content">리더보드</div>
+            <div class="modal-content">업적</div>
+            <div class="modal-content">보관함</div>
+            <div class="modal-content">계정관리</div>
+            <div class="modal-content">설정</div>
+        </div>
+    </div>
+
 </template>
 <script>
 import NavBarProfile from '../components/NavBarProfile'
@@ -85,6 +102,7 @@ export default{
     },
     data(){
         return {
+            isMenu : true,
             contents: [],
         }
     },
@@ -182,6 +200,31 @@ export default{
 .medal-img{
     width: 24px;
     margin: 4px;
+}
+
+
+.modal-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #454542;
+    width: 80vw;
+    height: 92vh;
+}
+.modal-img{
+    position: absolute;
+    right: 0;
+    width: 24px;
+    margin: 4px;
+}
+.modal-contents{
+    margin-top: 60px;
+}
+.modal-content{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin: 20px;
 }
 
 
