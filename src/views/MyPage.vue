@@ -28,6 +28,18 @@
                     <div class="pofile-statics-card-title">거래완료</div>
                     <div class="pofile-statics-card-content">38</div>
                 </div>
+                <div class="pofile-statics-card">
+                    <div class="pofile-statics-card-title">거래완료</div>
+                    <div class="pofile-statics-card-content">38</div>
+                </div>
+                <div class="pofile-statics-card">
+                    <div class="pofile-statics-card-title">거래완료</div>
+                    <div class="pofile-statics-card-content">38</div>
+                </div>
+                <div class="pofile-statics-card">
+                    <div class="pofile-statics-card-title">거래완료</div>
+                    <div class="pofile-statics-card-content">38</div>
+                </div>
                 
             </div>
         </div>
@@ -41,15 +53,16 @@
             </div>
         </div>
     </div>
+
+
     <div class="xp">
 
     </div>
+
+
     <div class="medal">
 
-    </div>
-    <div class="toggle-menu">
-
-    </div>
+    </div>    
     <!-- 토글메뉴에 따라 달라지는 컨텐츠 -->
     <NavBarProfile/>
     <router-view/>
@@ -83,13 +96,14 @@ export default{
 }
 .pofile-static{
     display: flex;
+    overflow: auto;
 }
 .pofile-img{    
     margin: 16px;    
     width: 72px;
 }
 .pofile-statics{
-    display: flex;
+    display: flex;     
 }
 .pofile-statics-card{
     border-radius: 5px;
@@ -103,7 +117,7 @@ export default{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 .pofile-statics-card-title{
     font-size: 10px;
