@@ -93,7 +93,7 @@
 }
 
 .card-review{
-    margin: 12px;
+    margin: 8px;
     border: 1px solid #d4d4d4;
     border-radius: 8px;
     background: #f5f5f5;
