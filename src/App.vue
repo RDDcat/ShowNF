@@ -1,6 +1,7 @@
 <template>  
   <NavBar />
   <router-view />
+  <div class="blank"></div>
   
 </template>
 
@@ -36,5 +37,8 @@ export default {
 body{
   margin: 0;
   padding: 0;
+}
+.blank{  
+  height: 16vh;
 }
 </style>
