@@ -24,7 +24,7 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'KOTRA_GOTHIC';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -34,6 +34,15 @@ export default {
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family:'KOTRA_GOTHIC';
+  src: url('assets/font/KOTRA_GOTHIC.ttf');
+}
+@font-face {
+  font-family:'KOTRA_SONGEULSSI';
+  src: url('assets/font/KOTRA_SONGEULSSI.ttf');
+}
+
 body{
   margin: 0;
   padding: 0;
