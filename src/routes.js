@@ -8,7 +8,14 @@ import MyPageMain from './components/MyPageMain'
 import MyPageAdopt from './components/MyPageAdopt'
 import MyPageAlbum from './components/MyPageAlbum'
 import MyPageDealing from './components/MyPageDealing'
+import AccountPage from './views/views/AccountPage'
+import AchievementPage from './views/views/AchievementPage'
+import AlermPage from './views/views/AlermPage'
+import LeaderPage from './views/views/LeaderPage'
 import MyChangePage from './views/views/MyChangePage'
+import PointPage from './views/views/PointPage'
+import SettingPage from './views/views/SettingPage'
+import StoragePage from './views/views/StoragePage'
 
 
 const router = createRouter({
@@ -29,7 +36,14 @@ const router = createRouter({
             { path: "dealing", component: MyPageDealing},
         ]},
 
+        { path: "/account", component: AccountPage},
+        { path: "/achievement", component: AchievementPage},
+        { path: "/alerm", component: AlermPage},
+        { path: "/leader", component: LeaderPage},
         { path: "/my/change", component: MyChangePage},
+        { path: "/point", component: PointPage},
+        { path: "/setting", component: SettingPage},
+        { path: "/storage", component: StoragePage},
 
     ]
 });

@@ -82,13 +82,13 @@
         </div>
         <div class="modal-contents">
             <div class="modal-content" @click="movePage('/my/change')">프로필 변경</div>
-            <div class="modal-content">알림설정</div>
-            <div class="modal-content">포인트 내역</div>
-            <div class="modal-content">리더보드</div>
-            <div class="modal-content">업적</div>
-            <div class="modal-content">보관함</div>
-            <div class="modal-content">계정관리</div>
-            <div class="modal-content">설정</div>
+            <div class="modal-content" @click="movePage('/alerm')">알림설정</div>
+            <div class="modal-content" @click="movePage('/point')">포인트 내역</div>
+            <div class="modal-content" @click="movePage('/leader')">리더보드</div>
+            <div class="modal-content" @click="movePage('/achievement')">업적</div>
+            <div class="modal-content" @click="movePage('/storage')">보관함</div>
+            <div class="modal-content" @click="movePage('/account')">계정관리</div>
+            <div class="modal-content" @click="movePage('/setting')">설정</div>
         </div>
     </div>
 
