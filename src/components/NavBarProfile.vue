@@ -1,14 +1,15 @@
 <template>
-<v-bottom-navigation class="nav">
-    <div class="nav-content" v-for="(page, index) in pages" :key="index" @click="movePage(page.link.url)">
-        <div>{{ page.link.text }}</div>
-    </div>
-</v-bottom-navigation>
+    <v-bottom-navigation class="nav">
+        <div class="nav-content" v-for="(page, index) in pages" :key="index" @click="movePage(page.link.url, $event);">
+            <div>{{ page.link.text }}</div>
+        </div>
+    </v-bottom-navigation>
 </template>
 <script>
 export default {
     data(){
         return {
+            pageNumber: 0,
             pages: [
             {
                 link : {text:'내 게시글', url: '/my/main'},
@@ -30,8 +31,9 @@ export default {
         }
     },
     methods: {
-        movePage(url){
+        movePage(url, event){
             this.$router.push(url);
+            console.log(event);
         },
     },
 }
@@ -46,9 +48,13 @@ export default {
 
 .nav-content{
     justify-content: center;
-    margin-top: 8px;
+    margin-top: 6px;
+    margin-bottom: 4px;
     width: 25%;
     text-align: center;
+    border-radius: 10;
+    margin-right: 2vw;
+    margin-left: 2vw;
 }
 
 </style>
