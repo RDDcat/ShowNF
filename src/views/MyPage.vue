@@ -54,17 +54,25 @@
         </div>
     </div>
 
-
+    <hr />
     <div class="xp">
-
+        <div class="xp-state">진화 [72/100] </div>
+        <div class="xp-level-now">알</div>
+        <div class="xp-line"></div>
+        <div class="xp-level-next">크레</div>
     </div>
 
-
+    <hr />
     <div class="medal">
-
+        <img class="medal-img" src="../assets/sample.png">
+        <img class="medal-img" src="../assets/sample.png">
+        <img class="medal-img" src="../assets/sample.png">
+        <img class="medal-img" src="../assets/sample.png">
     </div>    
+    <hr />
     <!-- 토글메뉴에 따라 달라지는 컨텐츠 -->
     <NavBarProfile/>
+    <hr />
     <router-view/>
 
 </template>
@@ -99,7 +107,7 @@ export default{
     overflow: auto;
 }
 .pofile-img{    
-    margin: 16px;    
+    margin: 12px;    
     width: 72px;
 }
 .pofile-statics{
@@ -126,10 +134,61 @@ export default{
 .pofile-statics-card-content{
     font-size: 14px;
 }
+
 .profile-info{
     display: flex;
 }
+.profile-info-user{
+    margin: 8px;
+}
 .profile-info-statemessage{
     margin: auto;
+}
+
+
+.xp{
+    display: flex;
+}
+.xp-state{
+    margin: auto;
+    font-size: 8px;
+}
+.xp-level-now{
+    margin: auto;
+    font-size: 6px;
+    background-color: #f6f6f6;
+    width: 6vw;
+    text-align: center;
+}
+.xp-line{
+    width: 64vw;
+    height: 2px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    margin: auto;
+}
+.xp-level-next{
+    margin: auto;
+    font-size: 6px;
+    background-color: #f6f6f6;
+    width: 6vw;
+    text-align: center;
+}
+
+
+.medal{
+    display: flex;
+}
+.medal-img{
+    width: 24px;
+    margin: 4px;
+}
+
+
+hr{
+    margin: 0%;
+    background-color : #f6f6f6;
+    height: 1px;
+    border : 0;
 }
 </style>
