@@ -1,4 +1,10 @@
 <template>
+    <div class="filters">
+        <div class="filter">
+            <img class="filter-img" src="../assets/sample.png">
+            <div class="filter-text">CITES 인증</div>
+        </div>
+    </div>
     <div class="content">
         <div class="item">
             <img class="item-img" src="../assets/sample.png">
@@ -21,6 +27,25 @@
 <script>
 </script>
 <style scoped>
+.filters{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.filter{
+    display: flex;
+    justify-content: flex-end;
+}
+.filter-img{
+    width: 12px;
+    margin-right: 2px;
+}
+.filter-text{
+    font-size: 8px;
+    margin-right: 4px;
+}
+
 .content{
     display: flex;
     flex-wrap:wrap;
