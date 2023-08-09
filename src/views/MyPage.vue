@@ -81,7 +81,7 @@
             <img class="modal-img" src="../assets/sample.png" @click="this.isMenu=false">
         </div>
         <div class="modal-contents">
-            <div class="modal-content">프로필 변경</div>
+            <div class="modal-content" @click="movePage('/my/change')">프로필 변경</div>
             <div class="modal-content">알림설정</div>
             <div class="modal-content">포인트 내역</div>
             <div class="modal-content">리더보드</div>
@@ -105,6 +105,11 @@ export default{
             isMenu : false,
             contents: [],
         }
+    },
+    methods: {
+        movePage(url){
+            this.$router.push(url);
+        },
     },
 };
 </script>
