@@ -9,6 +9,19 @@
     </div>
 </template>
 <script>
+import apiTest from '@/api/test';
+
+export default{
+    mounted() {
+        apiTest.getTestDAO()
+        .then(function (response){
+            console.log("getTestDAO : ", response);
+        })
+        .catch(function (e){
+            console.log(e);
+        });
+    },
+}
 
 
 </script>
