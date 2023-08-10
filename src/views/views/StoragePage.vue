@@ -1,15 +1,18 @@
 <template>
     <div class='top' @click='moveBack()'>
         <img alt="Vue logo" src="assets/logo.png" width='32'>
-        보관함
+        <div class="top-text">보관함</div>
     </div>
+    <NavBarStorage/>
 </template>
 <script>
+import NavBarStorage from '@/components/NavBarStorage';
+
 
 
 export default{
     components: {
-        
+        NavBarStorage,
     },
     data(){
         return {
@@ -28,5 +31,11 @@ export default{
 };
 </script>
 <style scoped>
-
+.top-text{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
 </style>

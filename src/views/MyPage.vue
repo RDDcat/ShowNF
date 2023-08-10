@@ -86,7 +86,7 @@
             <div class="modal-content" @click="movePage('/point')">포인트 내역</div>
             <div class="modal-content" @click="movePage('/leader')">리더보드</div>
             <div class="modal-content" @click="movePage('/achievement')">업적</div>
-            <div class="modal-content" @click="movePage('/storage')">보관함</div>
+            <div class="modal-content" @click="movePage('/storage/album')">보관함</div>
             <div class="modal-content" @click="movePage('/account')">계정관리</div>
             <div class="modal-content" @click="movePage('/setting')">설정</div>
         </div>

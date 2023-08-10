@@ -43,7 +43,11 @@ const router = createRouter({
         { path: "/my/change", component: MyChangePage},
         { path: "/point", component: PointPage},
         { path: "/setting", component: SettingPage},
-        { path: "/storage", component: StoragePage},
+        { path: "/storage", component: StoragePage, children: [
+            { path: "album", component: MyPageMain},
+            { path: "community", component: MyPageAdopt},
+            { path: "adopt", component: MyPageAlbum},
+        ]},
 
     ]
 });

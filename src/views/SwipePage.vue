@@ -5,7 +5,7 @@
         <div class="mybox"><img src="../assets/sample.png"></div>
     </div>
     <div class="content-imgtag">
-        <img class="content-imgtag" src="../assets/sample.png" @click="movePage('/storage')">
+        <img class="content-imgtag" src="../assets/sample.png" @click="movePage('/storage/album')">
     </div>
 </template>
 <script>
