@@ -5,13 +5,18 @@
         <div class="mybox"><img src="../assets/sample.png"></div>
     </div>
     <div class="content-imgtag">
-        <img class="content-imgtag" src="../assets/sample.png">
+        <img class="content-imgtag" src="../assets/sample.png" @click="movePage('/storage')">
     </div>
 </template>
 <script>
 import apiTest from '@/api/test';
 
 export default{
+    methods: {
+        movePage(url){
+            this.$router.push(url);
+        },
+    },
     mounted() {
         apiTest.getTestDAO()
         .then(function (response){
