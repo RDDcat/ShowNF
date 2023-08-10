@@ -4,6 +4,7 @@
         <div class="top-text">보관함</div>
     </div>
     <NavBarStorage/>
+    <router-view></router-view>
 </template>
 <script>
 import NavBarStorage from '@/components/NavBarStorage';

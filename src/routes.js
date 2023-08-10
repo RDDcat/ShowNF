@@ -16,6 +16,9 @@ import MyChangePage from './views/views/MyChangePage'
 import PointPage from './views/views/PointPage'
 import SettingPage from './views/views/SettingPage'
 import StoragePage from './views/views/StoragePage'
+import StorageAlbum from '@/components/StorageAlbum'
+import StorageCommunity from '@/components/StorageCommunity'
+import StorageAdopt from '@/components/StorageAdopt'
 
 
 const router = createRouter({
@@ -44,9 +47,9 @@ const router = createRouter({
         { path: "/point", component: PointPage},
         { path: "/setting", component: SettingPage},
         { path: "/storage", component: StoragePage, children: [
-            { path: "album", component: MyPageMain},
-            { path: "community", component: MyPageAdopt},
-            { path: "adopt", component: MyPageAlbum},
+            { path: "album", component: StorageAlbum},
+            { path: "community", component: StorageCommunity},
+            { path: "adopt", component: StorageAdopt},
         ]},
 
     ]
