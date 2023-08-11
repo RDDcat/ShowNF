@@ -1,11 +1,54 @@
 <template>
-    <div class=''>
-        <img alt="Vue logo" src="../assets/logo.png" width='32'>
-        되는뎅... 섭섭하네...
-        <p>진짜루 어이없넹...</p>
-        <p>참고로 여긴 관심분양 페이지야...</p>
-        <p>따..딱히 널 위해 알려주는건 아니라구...(웃음)</p>
+    <div class='contents'>        
+        <div class="content">
+            <img class="content-img" src="../assets/logo.png">
+            <div class="content-title">싱글벙글</div>
+            <div class="content-price">175,000 원</div>
+            <div class="content-username">user1</div>
+        </div>
+        
+        <div class="content">
+            <img class="content-img" src="../assets/logo.png">
+            <div class="content-title">싱글벙글</div>
+            <div class="content-price">175,000 원</div>
+            <div class="content-username">user1</div>
+        </div>
+        
+        <div class="content">
+            <img class="content-img" src="../assets/logo.png">
+            <div class="content-title">싱글벙글</div>
+            <div class="content-price">175,000 원</div>
+            <div class="content-username">user1</div>
+        </div>
     </div>
 </template>
 <script>
 </script>
+<style scoped>
+.contents{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 1vw;    
+    margin-bottom: 1vw;
+}
+.content-img{
+    width: 44vw;
+    
+}
+.content-title{
+    font-size: 14px;    
+    margin-right: auto;
+}
+.content-price{
+    font-size: 12px;  
+}
+.content-username{
+    font-size: 10px;
+    text-align: right;
+    margin-right: 2vw;
+}
+</style>
