@@ -37,6 +37,7 @@
 }
 .content-img{
     width: 44vw;
+    border-radius: 10px;
     
 }
 .content-title{

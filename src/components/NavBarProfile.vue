@@ -1,9 +1,10 @@
 <template>
     <v-bottom-navigation class="nav">
-        <div class="nav-content" v-for="(page, index) in pages" :key="index" @click="movePage(page.link.url, $event);">
+        <div class="nav-content" v-for="(page, index) in pages" :key="index" @click="movePage(page.link.url, index);">
             <div>{{ page.link.text }}</div>
         </div>
     </v-bottom-navigation>
+    <div class="line"></div>
 </template>
 <script>
 export default {
@@ -31,9 +32,9 @@ export default {
         }
     },
     methods: {
-        movePage(url, event){
+        movePage(url, index){
             this.$router.push(url);
-            console.log(event);
+            console.log(index);
         },
     },
 }
@@ -55,6 +56,15 @@ export default {
     border-radius: 10;
     margin-right: 2vw;
     margin-left: 2vw;
+}
+
+
+.line :active{
+    width: 25vw;
+    height: 1px;
+    background-color: black;
+    border: 2px solid;
+
 }
 
 </style>
