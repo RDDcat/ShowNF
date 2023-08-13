@@ -1,6 +1,6 @@
 <template>
-    <div class='top' @click='moveBack()'>
-        <img alt="Vue logo" src="assets/logo.png" width='32'>
+    <div class='top' >
+        <img alt="Vue logo" src="assets/logo.png" width='32' @click='moveBack()'>
         <div class="top-title"> 알람설정</div>        
         <div class="balance"></div>
     </div>
