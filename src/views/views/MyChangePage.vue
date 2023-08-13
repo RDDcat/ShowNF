@@ -1,15 +1,12 @@
 <template>
-    <div class='top' @click='moveBack()'>
-        <img alt="Vue logo" src="assets/logo.png" width='32'>
-        프로필 변경
-    </div>
+    <ProfileChange/>    
 </template>
 <script>
-
+import ProfileChange from '@/components/ProfileChange.vue';
 
 export default{
     components: {
-        
+        ProfileChange
     },
     data(){
         return {
@@ -18,12 +15,7 @@ export default{
         }
     },
     methods: {
-        movePage(url){
-            this.$router.push(url);
-        },
-        moveBack(){
-            this.$router.go(-1);
-        },
+        
     },
 };
 </script>

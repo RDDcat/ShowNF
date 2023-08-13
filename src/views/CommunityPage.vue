@@ -26,24 +26,7 @@ export default{
 };
 </script>
 <style scoped>
-.board{
-    overflow: auto;
-}
-.board-title{
-    display: flex;
-}
-.board-cards{    
-    display: flex;
-}
-.board-link{
-    width: 32px;
-    margin-left: auto;
-}
-.board-link img{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
+
 
 
 </style>

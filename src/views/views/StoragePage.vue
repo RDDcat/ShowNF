@@ -2,6 +2,7 @@
     <div class='top' @click='moveBack()'>
         <img alt="Vue logo" src="assets/logo.png" width='32'>
         <div class="top-text">보관함</div>
+        <div class="balance"></div>
     </div>
     <NavBarStorage/>
     <router-view></router-view>
@@ -32,11 +33,15 @@ export default{
 };
 </script>
 <style scoped>
+.top{
+    display: flex;
+}
 .top-text{
-    position: absolute;
-    top: 0;
     width: 100%;
     text-align: center;
     font-size: 18px;
+}
+.balance{
+    width: 32px;
 }
 </style>
