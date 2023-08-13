@@ -1,29 +1,20 @@
 <template>
-    <div class='top' @click='moveBack()'>
-        <img alt="Vue logo" src="assets/logo.png" width='32'>
-        알람 셋팅 페이지
-    </div>
+    <AlermSetting/>
 </template>
 <script>
-
+import AlermSetting from '@/components/AlermSetting.vue';
 
 export default{
     components: {
-        
+        AlermSetting,
     },
     data(){
         return {
-            isMenu : false,
             contents: [],
         }
     },
     methods: {
-        movePage(url){
-            this.$router.push(url);
-        },
-        moveBack(){
-            this.$router.go(-1);
-        },
+
     },
 };
 </script>
