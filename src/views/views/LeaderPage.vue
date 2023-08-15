@@ -15,6 +15,46 @@
             <div class="card-username">NickName</div>
             <div class="card-rating">rating: 21223</div>
         </div>
+        <div class="card">
+            <img class="card-img" src="assets/logo.png" width='50' height="50">
+            <div class="card-username">NickName</div>
+            <div class="card-rating">rating: 21223</div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="assets/logo.png" width='50' height="50">
+            <div class="card-username">NickName</div>
+            <div class="card-rating">rating: 21223</div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="assets/logo.png" width='50' height="50">
+            <div class="card-username">NickName</div>
+            <div class="card-rating">rating: 21223</div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="assets/logo.png" width='50' height="50">
+            <div class="card-username">NickName</div>
+            <div class="card-rating">rating: 21223</div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="assets/logo.png" width='50' height="50">
+            <div class="card-username">NickName</div>
+            <div class="card-rating">rating: 21223</div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="assets/logo.png" width='50' height="50">
+            <div class="card-username">NickName</div>
+            <div class="card-rating">rating: 21223</div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="assets/logo.png" width='50' height="50">
+            <div class="card-username">NickName</div>
+            <div class="card-rating">rating: 21223</div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="assets/logo.png" width='50' height="50">
+            <div class="card-username">NickName</div>
+            <div class="card-rating">rating: 21223</div>
+        </div>
     </div>
 </template>
 <script>
