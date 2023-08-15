@@ -12,6 +12,12 @@
         <div class="history">
             
         </div>
+        <div class="history">
+            
+        </div>
+        <div class="history">
+            
+        </div>
     </div>
 </template>
 <script>

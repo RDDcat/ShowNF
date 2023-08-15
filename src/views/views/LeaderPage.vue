@@ -1,7 +1,14 @@
 <template>
-    <div class='top' @click='moveBack()'>
-        <img alt="Vue logo" src="assets/logo.png" width='32'>
-        리더보드
+    <div class='top' >
+        <img alt="Vue logo" src="assets/logo.png" width='32' @click='moveBack()'>
+        <div class="top-title">랭킹</div>        
+        <div class="balance"></div>
+    </div>
+    <div class="cards">
+        <div class="card-title">이용내역</div>
+        <div class="card">
+            
+        </div>
     </div>
 </template>
 <script>
@@ -28,5 +35,16 @@ export default{
 };
 </script>
 <style scoped>
+.top{
+    display: flex;
+}
+.top-title{
+    margin: auto;
+    justify-content: center;
+}
+.balance{
+    width: 32px;
+}
+
 
 </style>
