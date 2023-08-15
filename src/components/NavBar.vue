@@ -2,7 +2,7 @@
 <v-bottom-navigation class="nav">
     <div class="nav-content" v-for="(page, index) in pages" :key="index" @click="movePage(page.link.url)">
         <img src="../assets/sample.png" width="32" height="32">
-        <div>{{ page.link.text }}</div>
+        <div class="nav-content-text">{{ page.link.text }}</div>
     </div>
 </v-bottom-navigation>
 </template>
@@ -17,7 +17,7 @@ export default {
                 img: '../assets'
             },
             {
-                link : {text:'입양', url: '/adopt'},
+                link : {text:'분양', url: '/adopt'},
                 pageTitle: 'AdoptPage',
                 img: '../assets'
             },
@@ -28,6 +28,11 @@ export default {
             },
             {
                 link : {text:'좋아', url: '/swipe'},
+                pageTitle: 'SwipePage',
+                img: '../assets'
+            },
+            {
+                link : {text:'마이펫', url: '/swipe'},
                 pageTitle: 'SwipePage',
                 img: '../assets'
             },
@@ -62,6 +67,10 @@ export default {
     margin-top: 8px;
     width: 20%;
     text-align: center;
+}
+
+.nav-content-text{
+    font-size: 12px;
 }
 
 </style>
