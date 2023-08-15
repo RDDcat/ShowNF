@@ -27,7 +27,7 @@
         <div class="card">
             <img class="card-img" src="assets/logo.png" width='50' height="50">
             <div class="card-detail">
-                <div class="card-name">업적 이름 1</div>
+                <div class="card-name">업적 이름 2</div>
                 <div class="card-detail-describe">업적 설명 로럼 잇섭</div>
                 <div class="card-detail-line"></div>
             </div>
@@ -35,7 +35,7 @@
         <div class="card">
             <img class="card-img" src="assets/logo.png" width='50' height="50">
             <div class="card-detail">
-                <div class="card-name">업적 이름 1</div>
+                <div class="card-name">업적 이름 3</div>
                 <div class="card-detail-describe">업적 설명 로럼 잇섭</div>
                 <div class="card-detail-line"></div>
             </div>
@@ -43,7 +43,7 @@
         <div class="card">
             <img class="card-img" src="assets/logo.png" width='50' height="50">
             <div class="card-detail">
-                <div class="card-name">업적 이름 1</div>
+                <div class="card-name">업적 이름 4</div>
                 <div class="card-detail-describe">업적 설명 로럼 잇섭</div>
                 <div class="card-detail-line"></div>
             </div>
@@ -51,7 +51,7 @@
         <div class="card">
             <img class="card-img" src="assets/logo.png" width='50' height="50">
             <div class="card-detail">
-                <div class="card-name">업적 이름 1</div>
+                <div class="card-name">업적 이름 5</div>
                 <div class="card-detail-describe">업적 설명 로럼 잇섭</div>
                 <div class="card-detail-line"></div>
             </div>
@@ -59,7 +59,7 @@
         <div class="card">
             <img class="card-img" src="assets/logo.png" width='50' height="50">
             <div class="card-detail">
-                <div class="card-name">업적 이름 1</div>
+                <div class="card-name">업적 이름 6</div>
                 <div class="card-detail-describe">업적 설명 로럼 잇섭</div>
                 <div class="card-detail-line"></div>
             </div>
@@ -67,7 +67,7 @@
         <div class="card">
             <img class="card-img" src="assets/logo.png" width='50' height="50">
             <div class="card-detail">
-                <div class="card-name">업적 이름 1</div>
+                <div class="card-name">업적 이름 7</div>
                 <div class="card-detail-describe">업적 설명 로럼 잇섭</div>
                 <div class="card-detail-line"></div>
             </div>
@@ -75,7 +75,7 @@
         <div class="card">
             <img class="card-img" src="assets/logo.png" width='50' height="50">
             <div class="card-detail">
-                <div class="card-name">업적 이름 1</div>
+                <div class="card-name">업적 이름 8</div>
                 <div class="card-detail-describe">업적 설명 로럼 잇섭</div>
                 <div class="card-detail-line"></div>
             </div>
