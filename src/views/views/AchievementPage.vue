@@ -1,7 +1,7 @@
 <template>
     <div class='top'>
         <img alt="Vue logo" src="assets/logo.png" width='32' @click='moveBack()'>
-        <div class="top-title">도전과제</div>
+        <div class="top-title">업적</div>
         <div class="balance"></div>
     </div>
     <div class="badge">
