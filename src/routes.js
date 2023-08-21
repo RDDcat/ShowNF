@@ -3,6 +3,7 @@ import MainPage from './views/MainPage'
 import AdoptPage from './views/AdoptPage'
 import CommunityPage from './views/CommunityPage'
 import SwipePage from './views/SwipePage'
+import MyPet from './views/MyPet'
 import MyPage from './views/MyPage'
 import MyPageMain from './components/MyPageMain'
 import MyPageAdopt from './components/MyPageAdopt'
@@ -31,6 +32,8 @@ const router = createRouter({
         { path: "/community", component: CommunityPage},
 
         { path: "/swipe", component: SwipePage},
+
+        { path: "/pet", component: MyPet},
 
         { path: "/my", component: MyPage, children: [
             { path: "main", component: MyPageMain},
