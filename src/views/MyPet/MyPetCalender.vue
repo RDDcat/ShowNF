@@ -6,6 +6,113 @@
                 <div class="calender-top-date">2023년 9월</div>
                 <div class="calender-top-right-arrow"><img src="assets/logo.png" width="16" height="16"></div>
             </div>
+            <div class="calender-contents">
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>                
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>                
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>                
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>                
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>                
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>                
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>                
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>                
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>                
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>                
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+<div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>                
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>                
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>                
+                <div class="calender-content">
+                    <div class="calender-content-text">1</div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -37,5 +144,19 @@
 .calender-top-right-arrow{
     margin-right: 16px;
     margin-top: 10px;
+}
+
+.calender-contents{
+    display: flex;
+    flex-wrap : wrap;
+}
+.calender-content{
+    width: 14.2%;
+    display: flex;
+}
+.calender-content-text{
+    margin: auto;
+    text-align: center;
+
 }
 </style>
