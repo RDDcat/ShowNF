@@ -80,7 +80,7 @@
 .frame{
     display: flex;
     height: 36vh;
-    border: 1px solid black;
+    border: 1px solid rgb(166, 168, 175);
 
 }
 .main-frame{
