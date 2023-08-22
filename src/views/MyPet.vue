@@ -7,7 +7,6 @@
         <div class="left-arrow">
             <img src="assets/logo.png" width="16" height="16">
         </div>
-
         <div class="main-frame">
             <img class="main-frame-img" src="assets/logo.png" width="120" height="120">
             <div class="main-frame-img-shadow">
@@ -17,7 +16,6 @@
             <div class="main-frame-pet-name">최종병기</div>
 
         </div>
-
         <div class="right-arrow">
             <img src="assets/logo.png" width="16" height="16">
         </div>
@@ -25,8 +23,39 @@
 
     <div class="pet-cards">
         <div class="pet-card">
-            
-
+            <div class="pet-card-frame">
+                <div class="pet-card-img">
+                    <img src="assets/logo.png" width="56" height="56">
+                </div>
+            </div>
+        </div>
+        <div class="pet-card">
+            <div class="pet-card-frame">
+                <div class="pet-card-img">
+                    <img src="assets/logo.png" width="56" height="56">
+                </div>
+            </div>
+        </div>
+        <div class="pet-card">
+            <div class="pet-card-frame">
+                <div class="pet-card-img">
+                    <img src="assets/logo.png" width="56" height="56">
+                </div>
+            </div>
+        </div>
+        <div class="pet-card">
+            <div class="pet-card-frame">
+                <div class="pet-card-img">
+                    <img src="assets/logo.png" width="56" height="56">
+                </div>
+            </div>
+        </div>
+        <div class="pet-card">
+            <div class="pet-card-frame">
+                <div class="pet-card-img">
+                    <img src="assets/logo.png" width="56" height="56">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -94,8 +123,22 @@
 
 .pet-cards{
     display: flex;
+    flex-wrap : wrap;
 }
 .pet-card{
-
+    display: flex;
+    width: 33vw;
+    height: 33vw;
+}
+.pet-card-frame{
+    display: flex;
+    width: 30vw;
+    height: 30vw;
+    margin:auto;
+    border-radius: 8px;
+    border: 1px solid #d6d6d6;
+}
+.pet-card-img{
+    margin:auto;
 }
 </style>
