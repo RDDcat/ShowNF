@@ -32,7 +32,7 @@ export default {
                 img: '../assets'
             },
             {
-                link : {text:'마이펫', url: '/pet'},
+                link : {text:'마이펫', url: '/pet/main'},
                 pageTitle: 'SwipePage',
                 img: '../assets'
             },

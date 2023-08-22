@@ -20,48 +20,23 @@
             <img src="assets/logo.png" width="16" height="16">
         </div>
     </div>
-
-    <div class="pet-cards">
-        <div class="pet-card">
-            <div class="pet-card-frame">
-                <div class="pet-card-img">
-                    <img src="assets/logo.png" width="56" height="56">
-                </div>
-            </div>
-        </div>
-        <div class="pet-card">
-            <div class="pet-card-frame">
-                <div class="pet-card-img">
-                    <img src="assets/logo.png" width="56" height="56">
-                </div>
-            </div>
-        </div>
-        <div class="pet-card">
-            <div class="pet-card-frame">
-                <div class="pet-card-img">
-                    <img src="assets/logo.png" width="56" height="56">
-                </div>
-            </div>
-        </div>
-        <div class="pet-card">
-            <div class="pet-card-frame">
-                <div class="pet-card-img">
-                    <img src="assets/logo.png" width="56" height="56">
-                </div>
-            </div>
-        </div>
-        <div class="pet-card">
-            <div class="pet-card-frame">
-                <div class="pet-card-img">
-                    <img src="assets/logo.png" width="56" height="56">
-                </div>
-            </div>
-        </div>
-    </div>
+    <router-view></router-view>
 
 </template>
 <script>
 
+export default {
+    data(){
+        return {
+            
+        }
+    },
+    methods: {
+        movePage(url){
+            this.$router.push(url);
+        },
+    },
+}
 
 
 </script>
