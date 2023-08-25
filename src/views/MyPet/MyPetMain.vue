@@ -29,9 +29,10 @@
             </div>
         </div>
         <div class="pet-card">
-            <div class="pet-card-frame" @click="movePage('/pet/calender')">
+            <div class="pet-card-frame" @click="movePage('/pet/add')">
                 <div class="pet-card-img">
                     <img src="assets/logo.png" width="56" height="56">
+                    plus
                 </div>
             </div>
         </div>

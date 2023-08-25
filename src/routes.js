@@ -8,6 +8,7 @@ import MyPet from './views/MyPet'
 import MyPetMain from '@/views/MyPet/MyPetMain'
 import MyPetCalender from '@/views/MyPet/MyPetCalender'
 import MyPetAdd from '@/views/MyPet/MyPetAdd'
+import MyPetDiary from '@/views/MyPet/MyPetDiary'
 import MyPetAddDiary from '@/views/MyPet/MyPetAddDiary'
 
 import MyPage from './views/MyPage'
@@ -44,7 +45,8 @@ const router = createRouter({
         { path: "/pet", component: MyPet, children: [
             { path: "main", component: MyPetMain},
             { path: "calender", component: MyPetCalender},
-            { path: "diary", component: MyPetAdd},
+            { path: "add", component: MyPetAdd},
+            { path: "diary", component: MyPetDiary},
             { path: "diary/add", component: MyPetAddDiary},
         ]},
 
