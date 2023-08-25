@@ -1,6 +1,8 @@
 <template>
-    <div class='top'>
-        <div class="top-title">마이펫</div>
+    <div class='top' >
+        <img alt="Vue logo" src="assets/logo.png" width='32' height="32" @click='moveBack()'>
+        <div class="top-title">마이펫</div>        
+        <div class="balance"></div>
     </div>
 
     <div class="frame">
@@ -35,6 +37,9 @@ export default {
         movePage(url){
             this.$router.push(url);
         },
+        moveBack(){
+            this.$router.go(-1);
+        },
     },
 }
 
@@ -49,7 +54,10 @@ export default {
     margin-top: 1vh;
     justify-content: center;
     font-size: 20px;
-    height: 40px;
+    height: 38px;
+}
+.balance{
+    width: 32px;
 }
 
 .frame{

@@ -135,6 +135,8 @@ export default {
 }
 </script>
 <style scoped>
+
+
 .calender{
     display: flex;
     width: 100vw;
@@ -187,6 +189,7 @@ export default {
 .calender-content-text{
     margin: auto;
     text-align: center;
-
+    position: relative;
+    bottom: 2px;
 }
 </style>
