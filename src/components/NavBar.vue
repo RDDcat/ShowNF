@@ -1,6 +1,6 @@
 <template>
 <v-bottom-navigation class="nav">
-    <div class="nav-content" v-for="(page, index) in pages" :key="index" @click="movePage(page.link.url)">
+    <div class="nav-content" :class="this.pageActive[index] ? 'nav-active' : ''" v-for="(page, index) in pages" :key="index" @click="movePage(page.link.url); activePage(index) ">
         <img src="../assets/sample.png" width="32" height="32">
         <div class="nav-content-text">{{ page.link.text }}</div>
     </div>
@@ -10,6 +10,7 @@
 export default {
     data(){
         return {
+            pageActive:[1,0,0,0,0,0],
             pages: [
             {
                 link : {text:'홈', url: '/'},
@@ -45,6 +46,11 @@ export default {
         }
     },
     methods: {
+        activePage(index){
+            const copyPageActive = new Array(this.pageActive.length).fill(0);
+            copyPageActive[index] = 1;
+            this.pageActive = copyPageActive;
+        },
         movePage(url){
             this.$router.push(url);
         },
@@ -67,6 +73,9 @@ export default {
     margin-top: 8px;
     width: 20%;
     text-align: center;
+}
+.nav-active{
+    background-color: #d9d9d9;
 }
 
 .nav-content-text{

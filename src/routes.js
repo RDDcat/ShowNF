@@ -45,10 +45,10 @@ const router = createRouter({
         { path: "/pet", component: MyPet, children: [
             { path: "main", component: MyPetMain},
             { path: "calender", component: MyPetCalender},
-            { path: "add", component: MyPetAdd},
             { path: "diary", component: MyPetDiary},
             { path: "diary/add", component: MyPetAddDiary},
         ]},
+        { path: "/pet/add", component: MyPetAdd},
 
         { path: "/my", component: MyPage, children: [
             { path: "main", component: MyPageMain},
