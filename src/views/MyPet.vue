@@ -22,12 +22,29 @@
             <img src="assets/logo.png" width="16" height="16">
         </div>
     </div>
-    <router-view></router-view>
+
+    <!-- 컴포넌트 변동 -->
+    <MyPetMain />
+    <MyPetCalender />
+    <MyPetDiary />
+    <MyPetAddDiary />
+    <!-- 컴포넌트 변동 -->
 
 </template>
 <script>
+import MyPetMain from '@/components/MyPet/MyPetMain'
+import MyPetCalender from '@/components/MyPet/MyPetCalender'
+import MyPetDiary from '@/components/MyPet/MyPetDiary'
+import MyPetAddDiary from '@/components/MyPet/MyPetAddDiary'
 
 export default {
+    component:{
+        MyPetMain,
+        MyPetCalender,
+        MyPetDiary,
+        MyPetAddDiary,
+
+    },
     data(){
         return {
             

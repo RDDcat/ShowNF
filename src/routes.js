@@ -5,11 +5,7 @@ import CommunityPage from './views/CommunityPage'
 import SwipePage from './views/SwipePage'
 
 import MyPet from './views/MyPet'
-import MyPetMain from '@/views/MyPet/MyPetMain'
-import MyPetCalender from '@/views/MyPet/MyPetCalender'
-import MyPetAdd from '@/views/MyPet/MyPetAdd'
-import MyPetDiary from '@/views/MyPet/MyPetDiary'
-import MyPetAddDiary from '@/views/MyPet/MyPetAddDiary'
+import MyPetAdd from '@/components/MyPet/MyPetAdd'
 
 import MyPage from './views/MyPage'
 import MyPageMain from './components/MyPageMain'
@@ -42,14 +38,9 @@ const router = createRouter({
 
         { path: "/swipe", component: SwipePage},
 
-        { path: "/pet", component: MyPet, children: [
-            { path: "main", component: MyPetMain},
-            { path: "calender", component: MyPetCalender},
-            { path: "diary", component: MyPetDiary},
-            { path: "diary/add", component: MyPetAddDiary},
-        ]},
+        { path: "/pet", component: MyPet},
         { path: "/pet/add", component: MyPetAdd},
-
+        
         { path: "/my", component: MyPage, children: [
             { path: "main", component: MyPageMain},
             { path: "adopt", component: MyPageAdopt},

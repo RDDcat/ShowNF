@@ -1,8 +1,6 @@
 <!-- 커뮤니티 페이지 -->
 <template>
-    <div class="contents">
-        <ContentBoard/>
-    </div>
+    <ContentBoard/>
 
 </template>
 <script>
