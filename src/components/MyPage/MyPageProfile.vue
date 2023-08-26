@@ -1,7 +1,102 @@
 <template>
-    <div class='top'>
-        <img alt="Vue logo" src="../assets/logo.png" width='32'>
+    <div class="profile">
+        <div class="profile-static">
+            <img class="profile-img" src="@/assets/sample.png">
+            <div class="profile-statics">
+                <div class="profile-statics-card">
+                    <div class="profile-statics-card-title">활동일수</div>
+                    <div class="profile-statics-card-content">+182일</div>
+                </div>
+                <div class="profile-statics-card">
+                    <div class="profile-statics-card-title">팔로워</div>
+                    <div class="profile-statics-card-content">823</div>
+                </div>
+                <div class="profile-statics-card">
+                    <div class="profile-statics-card-title">팔로잉</div>
+                    <div class="profile-statics-card-content">1198</div>
+                </div>
+                <div class="profile-statics-card">
+                    <div class="profile-statics-card-title">게시물</div>
+                    <div class="profile-statics-card-content">219</div>
+                </div>
+                <div class="profile-statics-card">
+                    <div class="profile-statics-card-title">거래완료</div>
+                    <div class="profile-statics-card-content">38</div>
+                </div>
+                <div class="profile-statics-card">
+                    <div class="profile-statics-card-title">거래완료</div>
+                    <div class="profile-statics-card-content">38</div>
+                </div>
+                <div class="profile-statics-card">
+                    <div class="profile-statics-card-title">거래완료</div>
+                    <div class="profile-statics-card-content">38</div>
+                </div>
+                <div class="profile-statics-card">
+                    <div class="profile-statics-card-title">거래완료</div>
+                    <div class="profile-statics-card-content">38</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="profile-info">
+            <div class="profile-info-user">
+                <div class="profile-info-username">백설공주</div>
+                <div class="profile-info-userid">@snow_white21</div>
+            </div>
+            <div class="profile-info-statemessage">
+                "거울아 거울아 나를 두고 가시나"
+            </div>
+        </div>
     </div>
 </template>
 <script>
 </script>
+<style scoped>
+.profile{
+    
+}
+.profile-static{
+    display: flex;
+    overflow: auto;
+    border-bottom: 1px solid #f6f6f6;
+}
+.profile-img{    
+    margin: 12px;    
+    width: 72px;
+}
+.profile-statics{
+    display: flex;     
+}
+.profile-statics-card{
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    border: 1px soild #d5d5d5;
+    width: 64px;
+    height: 52px;
+    margin: auto;    
+    margin-right: 2px;
+    margin-left: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.profile-statics-card-title{
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+.profile-statics-card-content{
+    font-size: 14px;
+}
+
+.profile-info{
+    display: flex;
+    border-bottom: 1px solid #f6f6f6;
+}
+.profile-info-user{
+    margin: 8px;
+}
+.profile-info-statemessage{
+    margin: auto;
+}
+</style>
