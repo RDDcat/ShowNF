@@ -25,22 +25,22 @@
 
     <!-- 컴포넌트 변동 -->
     <MyPetMain 
-    
+        @changePage='changePage' 
         v-if="pageNumber[0]"/>
     <MyPetCalender v-if="pageNumber[1]"/>
     <MyPetDiary v-if="pageNumber[2]"/>
     <MyPetAddDiary v-if="pageNumber[3]"/>
     <!-- 컴포넌트 변동 -->
-
+    
 </template>
 <script>
-import MyPetMain from '@/components/MyPet/MyPetMain'
-import MyPetCalender from '@/components/MyPet/MyPetCalender'
-import MyPetDiary from '@/components/MyPet/MyPetDiary'
-import MyPetAddDiary from '@/components/MyPet/MyPetAddDiary'
+import MyPetMain from '@/components/MyPet/MyPetMain.vue'
+import MyPetCalender from '@/components/MyPet/MyPetCalender.vue'
+import MyPetDiary from '@/components/MyPet/MyPetDiary.vue'
+import MyPetAddDiary from '@/components/MyPet/MyPetAddDiary.vue'
 
 export default {
-    component:{
+    components:{
         MyPetMain,
         MyPetCalender,
         MyPetDiary,
@@ -53,6 +53,9 @@ export default {
         }
     },
     methods: {
+        changePage(pageNumber){
+            this.pageNumber = pageNumber;
+        },
         movePage(url){
             this.$router.push(url);
         },

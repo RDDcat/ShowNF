@@ -1,28 +1,28 @@
 <template>
     <div class="pet-cards">
         <div class="pet-card">
-            <div class="pet-card-frame" @click="this.$emit('pageNumber', [false, true, false, false])">
+            <div class="pet-card-frame" @click="this.$emit('changePage', [false, true, false, false])">
                 <div class="pet-card-img">
                     <img src="assets/logo.png" width="56" height="56">
                 </div>
             </div>
         </div>
         <div class="pet-card">
-            <div class="pet-card-frame" @click="movePage('/pet/calender')">
+            <div class="pet-card-frame" @click="this.$emit('changePage', [false, true, false, false])">
                 <div class="pet-card-img">
                     <img src="assets/logo.png" width="56" height="56">
                 </div>
             </div>
         </div>
         <div class="pet-card">
-            <div class="pet-card-frame" @click="movePage('/pet/calender')">
+            <div class="pet-card-frame" @click="this.$emit('changePage', [false, true, false, false])">
                 <div class="pet-card-img">
                     <img src="assets/logo.png" width="56" height="56">
                 </div>
             </div>
         </div>
         <div class="pet-card">
-            <div class="pet-card-frame" @click="movePage('/pet/calender')">
+            <div class="pet-card-frame" @click="this.$emit('changePage', [false, true, false, false])">
                 <div class="pet-card-img">
                     <img src="assets/logo.png" width="56" height="56">
                 </div>
@@ -51,9 +51,7 @@ export default {
             this.$router.push(url);
         },
     },
-}
-
-
+};
 </script>
 <style scoped>
 .pet-cards{
