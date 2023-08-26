@@ -1,7 +1,7 @@
 <template>
-    <div class="modal-menu" v-if="isMenu == true">
+    <div class="modal-menu" >
         <div class="modal-top">
-            <img class="modal-img" src="@/assets/sample.png" @click="this.$emit('isMenu', false)">
+            <img class="modal-img" src="@/assets/sample.png" @click="this.$emit('isMenu', false); ">
         </div>
         <div class="modal-contents">
             <div class="modal-content" @click="movePage('/my/change')">프로필 변경</div>

@@ -1,11 +1,11 @@
 <!-- 마이 페이지 -->
 <template>
-    <MyPageTop/>
-    
+    <MyPageTop
+        @isMenu="setInput"  
+        :isMenu="this.isMenu" />
+        {{ this.isMenu }}
     <MyPageProfile/>
-
     <MyPageXP/>
-
     <MyPageMedal/>
 
     <!-- 토글메뉴에 따라 달라지는 컨텐츠 -->
@@ -13,8 +13,10 @@
     <router-view/>
 
     <!-- 사이드 버거메뉴 -->
-    <SideNavModal @isMenu="this.isMenu = e" :isMenu="this.isMenu" 
-        v-if="isMenu == true" /> 
+    <SideNavModal 
+        @isMenu="setInput" 
+        :isMenu="this.isMenu"
+        v-if="this.isMenu == true" /> 
 
 </template>
 <script>
@@ -41,6 +43,10 @@ export default{
         }
     },
     methods: {
+        setInput(isMenu){
+            this.isMenu = isMenu;
+            console.log('check : ', isMenu);
+        },
         movePage(url){
             this.$router.push(url);
         },

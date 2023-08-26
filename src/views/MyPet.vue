@@ -24,10 +24,10 @@
     </div>
 
     <!-- 컴포넌트 변동 -->
-    <MyPetMain />
-    <MyPetCalender />
-    <MyPetDiary />
-    <MyPetAddDiary />
+    <MyPetMain v-if="pageNumber[0]"/>
+    <MyPetCalender v-if="pageNumber[1]"/>
+    <MyPetDiary v-if="pageNumber[2]"/>
+    <MyPetAddDiary v-if="pageNumber[3]"/>
     <!-- 컴포넌트 변동 -->
 
 </template>
@@ -47,7 +47,7 @@ export default {
     },
     data(){
         return {
-            
+            pageNumber: [true, false, false, false],
         }
     },
     methods: {
