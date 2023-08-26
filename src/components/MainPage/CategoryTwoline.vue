@@ -2,13 +2,13 @@
     <div class='category-twoline'>
         <div class="category">
             <div class="category-content" v-for="(category, index) in CategoriesTop" :key="index" @click="console.log(category)">
-                <img src="../assets/sample.png" width="44">
+                <img src="@/assets/sample.png" width="44">
                 <div class="category-content-text">{{category.text}}</div>
             </div>
         </div>
         <div class="category">
             <div class="category-content" v-for="(category, index) in CategoriesBottom" :key="index" @click="console.log(category)">
-                <img src="../assets/sample.png" width="44">
+                <img src="@/assets/sample.png" width="44">
                 <div class="category-content-text">{{category.text}}</div>
             </div>
         </div>        

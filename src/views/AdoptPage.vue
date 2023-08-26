@@ -4,13 +4,12 @@
     <CategoryTwoline/>
     <ContentTwoCardPriceTitle/>
 
-    
 
 </template>
 <script>
-import CategoryTwoline from '../components/CategoryTwoline.vue'
-import BannerAdopt from '../components/BannerAdopt.vue'
-import ContentTwoCardPriceTitle from '../components/ContentTwoCardPriceTitle.vue'
+import CategoryTwoline from '@/components/MainPage/CategoryTwoline.vue'
+import BannerAdopt from '@/components/BannerAdopt.vue'
+import ContentTwoCardPriceTitle from '@/components/ContentTwoCardPriceTitle.vue'
 
 export default{
     components: {

@@ -7,11 +7,11 @@
     
 </template>
 <script>
-import TopMain from '../components/TopMain.vue'
-import CategoryBasic from '../components/CategoryBasic.vue'
-import BannerMain from '../components/BannerMain.vue'
-import CategoryTwoline from '../components/CategoryTwoline.vue'
-import ContentTitleLinkTwoCard from '../components/ContentTitleLinkTwoCard.vue'
+import TopMain from '@/components/MainPage/TopMain.vue'
+import CategoryBasic from '@/components/MainPage/CategoryBasic.vue'
+import BannerMain from '@/components/MainPage/BannerMain.vue'
+import CategoryTwoline from '@/components/MainPage/CategoryTwoline.vue'
+import ContentTitleLinkTwoCard from '@/components/MainPage/ContentTitleLinkTwoCard.vue'
 
 export default{
     components: {
@@ -32,8 +32,8 @@ export default{
                 {title:'최고의 귀염둥이!!'},
                 {title:'내 친구를 찾아보자'},
                 {title:'새로운 타이틀 1'},
-                {title:'설마 여기까지 보겠어22?'},                
-                {title:'설마 여기까지 보겠어333?'},
+                {title:'새로운 타이틀 22'},                
+                {title:'설마 여기까지 보겠어 333?'},
             ]
 
             return dummyContents;

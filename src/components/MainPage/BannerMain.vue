@@ -1,6 +1,6 @@
 <template>
     <div class='banner'>
-        <img class='banner-content' src="../assets/sample.png">
+        <img class='banner-content' src="@/assets/sample.png">
     </div>
 </template>
 <style scoped>

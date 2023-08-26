@@ -1,7 +1,7 @@
 <template>
     <div class='category category-basic'>
         <div class="category-content" v-for="(category, index) in categories" :key="index" @click="console.log(category)">
-            <img src="../assets/sample.png" width="44">
+            <img src="@/assets/sample.png" width="44">
             <div class="category-content-text">{{category.text}}</div>
         </div>
     </div>
