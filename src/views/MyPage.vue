@@ -45,7 +45,6 @@ export default{
     methods: {
         setInput(isMenu){
             this.isMenu = isMenu;
-            console.log('check : ', isMenu);
         },
         movePage(url){
             this.$router.push(url);
