@@ -24,7 +24,9 @@
     </div>
 
     <!-- 컴포넌트 변동 -->
-    <MyPetMain v-if="pageNumber[0]"/>
+    <MyPetMain 
+    
+        v-if="pageNumber[0]"/>
     <MyPetCalender v-if="pageNumber[1]"/>
     <MyPetDiary v-if="pageNumber[2]"/>
     <MyPetAddDiary v-if="pageNumber[3]"/>

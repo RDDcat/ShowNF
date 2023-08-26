@@ -1,9 +1,8 @@
 <!-- 마이 페이지 -->
 <template>
     <MyPageTop
-        @isMenu="setInput"  
-        :isMenu="this.isMenu" />
-        {{ this.isMenu }}
+        @onMenu="onMenu"  
+        />
     <MyPageProfile/>
     <MyPageXP/>
     <MyPageMedal/>
@@ -14,8 +13,7 @@
 
     <!-- 사이드 버거메뉴 -->
     <SideNavModal 
-        @isMenu="setInput" 
-        :isMenu="this.isMenu"
+        @offMenu="offMenu" 
         v-if="this.isMenu == true" /> 
 
 </template>
@@ -43,8 +41,11 @@ export default{
         }
     },
     methods: {
-        setInput(isMenu){
-            this.isMenu = isMenu;
+        onMenu(){
+            this.isMenu = true;
+        },
+        offMenu(){
+            this.isMenu = false;
         },
         movePage(url){
             this.$router.push(url);

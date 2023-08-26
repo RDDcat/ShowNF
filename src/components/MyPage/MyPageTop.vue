@@ -2,13 +2,13 @@
     <div class="top">
         <div class="balance"></div>
         <div class="top-title">마이페이지</div>
-        <img class="top-menu" src="@/assets/sample.png" @click="this.$emit('isMenu', true)">
+        <img class="top-menu" src="@/assets/sample.png" @click="this.$emit('onMenu')">
     </div>
 </template>
 <script>
 export default{
     props: {
-        isMenu: Boolean,
+
     },
     
 };
