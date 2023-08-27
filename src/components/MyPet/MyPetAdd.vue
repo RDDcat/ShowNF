@@ -5,7 +5,7 @@
         <div class="balance"></div>
     </div>
     <div class="imgs">
-        <div class="img-add"><img alt="Vue logo" src="assets/logo.png"></div>
+        <div class="img-add" @click="console.log('그림추가하러 가기')"><img alt="Vue logo" src="assets/logo.png"></div>
         <div class="img"></div>
     </div>
     <div class="input-name">
