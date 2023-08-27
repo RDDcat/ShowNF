@@ -1,4 +1,28 @@
 <template>
+    <div class='top' >
+        <img alt="Vue logo" src="assets/logo.png" width='32' height="32"  @click="this.$emit('changePage', [true, false, false, false])">
+        <div class="top-title">캘린더</div>
+        <div class="balance"></div>
+    </div>
+
+    <div class="frame">
+        <div class="left-arrow">
+            <img src="assets/logo.png" width="16" height="16">
+        </div>
+        <div class="main-frame">
+            <img class="main-frame-img" src="assets/logo.png" width="120" height="120">
+            <div class="main-frame-img-shadow">
+                <img src="assets/logo.png" width="52" height="12">
+            </div>
+            
+            <div class="main-frame-pet-name">최종병기</div>
+
+        </div>
+        <div class="right-arrow">
+            <img src="assets/logo.png" width="16" height="16">
+        </div>
+    </div>
+
     <div class="calender">
         <div class="calender-frame">
             <div class="calender-top">
@@ -135,7 +159,62 @@ export default {
 }
 </script>
 <style scoped>
+.top{
+    display: flex;
+}
+.top-title{
+    margin: auto;
+    margin-top: 1vh;
+    justify-content: center;
+    font-size: 20px;
+    height: 38px;
+}
+.balance{
+    width: 32px;
+}
 
+
+.frame{
+    display: flex;
+    height: 36vh;
+    border: 1px solid rgb(166, 168, 175);
+
+}
+.main-frame{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+.main-frame-img{
+    z-index: 99;
+}
+.main-frame-img-shadow{
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: 10px;
+    right: auto;
+    text-align: center;
+}
+.main-frame-pet-name{
+    position: relative;
+    top: 4vh;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    text-align: center;
+}
+
+.left-arrow{
+    margin-left: 1.5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.right-arrow{
+    margin-right: 1.5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 .calender{
     display: flex;
