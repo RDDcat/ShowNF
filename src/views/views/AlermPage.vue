@@ -2,7 +2,7 @@
     <AlermSetting/>
 </template>
 <script>
-import AlermSetting from '@/components/AlermSetting.vue';
+import AlermSetting from '@/components/views/AlermSetting.vue';
 
 export default{
     components: {

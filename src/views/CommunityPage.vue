@@ -4,7 +4,7 @@
 
 </template>
 <script>
-import ContentBoard from '../components/ContentBoard.vue'
+import ContentBoard from '@/components/CommunityPage/ContentBoard.vue'
 
 export default{
     components: {
