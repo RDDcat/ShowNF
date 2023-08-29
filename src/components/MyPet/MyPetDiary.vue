@@ -51,14 +51,22 @@
         </div>
     </div>
     <div class="weight">
-        <div class="title">몸무게</div>
+        <div class="weight-title">몸무게</div>
         <div class="weight-input">
             <input v-model="message" placeholder="몸무게를 입력해주세요" >
             <div class="weight-input-unit">g</div>
         </div>
     </div>
     <div class="memo">
+        <div class="memo-title">메모</div>
         <input placeholder="간단한 메모를 입력해주세요">
+    </div>
+    
+    <div class="submit">
+        <div class="submit-message">등록 후 하루가 지나면 수정이 불가능합니다.</div>
+        <div class="submit-button">
+            <div class="submit-button-text">등록하기</div>
+        </div>
     </div>
 
 </template>
@@ -194,6 +202,10 @@
     margin:4px;
 
 }
+.weight-title{    
+    padding-left: 6px;
+    font-size: 12px;
+}
 .weight-input{
     display: flex;
 }
@@ -212,6 +224,43 @@
     margin-left: 4px;
 }
 
+.memo{
+    margin:4px;
+    margin-top:12px;
 
+}
+.memo-title{
+    padding-left: 6px;
+    font-size: 12px;
+}
+.memo input{
+    width: 96vw;    
+    height: 20vh;
+    border-radius: 10px;
+    border: 1px solid #acacb1;
+}
+.memo input::placeholder{
+
+}
+
+.submit{
+    position: absolute;
+    bottom: 8vh;
+}
+.submit-message{
+    font-size: 6px;
+    text-align: center;
+}
+.submit-button{
+    width: 92vw;
+    margin-left: 4vw;
+    border-radius: 8px;
+    border: 1px solid #f6f6f6;
+    background-color: #5ef351;
+}
+.submit-button-text{
+    font-size: 18px;
+    text-align: center;
+}
 
 </style>

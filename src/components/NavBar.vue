@@ -66,6 +66,7 @@ export default {
     background-color: white;
     
     width: 100vw;
+    height: 8vh;
 }
 
 .nav-content{
