@@ -1,6 +1,6 @@
 <template>
     <div class='top' >
-        <div class="balance"></div>
+        <div class="balance" @click="this.$emit('changePage', [false, true, false, false])"></div>
         <div class="top-title">마이펫</div>        
         <div class="balance"></div>
     </div>

@@ -6,7 +6,9 @@
     <MyPetCalender 
         @changePage='changePage' 
         v-if="pageNumber[1]"/>
-    <MyPetDiary v-if="pageNumber[2]"/>
+    <MyPetDiary 
+        @changePage='changePage' 
+        v-if="pageNumber[2]"/>
     <MyPetAddDiary v-if="pageNumber[3]"/>
     <!-- 컴포넌트 변동 -->
     
