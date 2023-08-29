@@ -15,13 +15,52 @@
                 <img src="assets/logo.png" width="52" height="12">
             </div>
             
-            <div class="main-frame-pet-name">최종병기</div>
+            <div class="main-frame-pet-name"></div>
 
         </div>
         <div class="right-arrow">
             <img src="assets/logo.png" width="16" height="16">
         </div>
     </div>
+
+    <!-- -->
+    <div class="food">
+        <div class="food-title">먹이</div>
+        <div class="food-form">
+            <div class="food-select">
+                <select v-model="selected">
+                    <option disabled value="">하나를 선택해주세요..!</option>
+                    <option>귀뚜라미</option>
+                    <option>밀웜</option>
+                    <option>개미</option>
+                    <option>목도리도마뱀~~</option>
+                </select>
+            </div>
+            <div class="food-input">
+                <input v-model="message" placeholder="마리">
+            </div>
+            <div class="food-plus-button" @click="console.log('+1 clicked')">
+                <div class="food-plus-button-text">+1</div>
+            </div>
+        </div>
+        <div class="food-size-buttons">
+            <div class="food-size-button"><div class="food-size-button-text">극소</div></div>
+            <div class="food-size-button"><div class="food-size-button-text">소</div></div>
+            <div class="food-size-button"><div class="food-size-button-text">중</div></div>
+            <div class="food-size-button"><div class="food-size-button-text">대</div></div>
+        </div>
+    </div>
+    <div class="weight">
+        <div class="title">몸무게</div>
+        <div class="weight-input">
+            <input v-model="message" placeholder="몸무게를 입력해주세요" >
+            <div class="weight-input-unit">g</div>
+        </div>
+    </div>
+    <div class="memo">
+        <input placeholder="간단한 메모를 입력해주세요">
+    </div>
+
 </template>
 <script>
 </script>
@@ -82,7 +121,96 @@
     margin-bottom: auto;
 }
 
+.food-title{    
+    margin: 4px;
+    padding-left: 8px;
+    font-size: 12px;
+}
+.food-form{
+    display: flex;
+    margin-bottom: 8px;
+}
+.food-select{
+    margin-left: 4px;
+    margin-right: 4px;
+    height: 38px;
+    width: 50%;
+}
+.food-select select{
+    height: 100%;    
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #acacb1;
+}
+.food-input{
+    margin-left: 4px;
+    margin-right: 8px;
+    width: 33%;
+    height: 34px;
+}
+.food-input input{
+    width: 100%;
+    height: 100%;    
+    border-radius: 6px;
+    border: 1px solid #acacb1;
+}
+.food-input input::placeholder{
+    text-align: right;
+}
+.food-plus-button{   
+    padding: 1px;
+    margin-left: 4px;
+    width: 42px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: #d9d9d9;
+    align-items: center;
+}
+.food-plus-button-text{
+    margin-top: 8px;
+    font-size: 12px;
+    text-align: center;
+}
 
+.food-size-buttons{
+    display: flex;
+}
+.food-size-button{    
+    margin: 2px;
+    width: 25%;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+.food-size-button-text{
+    position: relative;
+    transform: translateY(30%);
+    font-size: 14px;
+}
+
+.weight{
+    margin:4px;
+
+}
+.weight-input{
+    display: flex;
+}
+.weight-input input{
+    width: 46vw;
+    height: 36px;
+    border-radius: 10px;
+    border: 1px solid #acacb1;
+}
+.weight-input input::placeholder{
+    text-align: center;
+}
+.weight-input-unit{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 4px;
+}
 
 
 
