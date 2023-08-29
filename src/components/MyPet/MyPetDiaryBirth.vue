@@ -19,6 +19,7 @@
 
         </div>
         <div class="right-arrow">
+            
             <img src="assets/logo.png" width="16" height="16">
         </div>
     </div>
@@ -245,7 +246,7 @@
 
 .submit{
     position: absolute;
-    bottom: 7.5vh;
+    bottom: 6.5vh;
 }
 .submit-message{
     font-size: 6px;

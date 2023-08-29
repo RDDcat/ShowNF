@@ -31,113 +31,113 @@
                 <div class="calender-top-right-arrow"><img src="assets/logo.png" width="16" height="16"></div>
             </div>
             <div class="calender-contents">
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text"></div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text"></div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text"></div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text"></div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text"></div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">1</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">2</div>
                 </div>
                 
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">3</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">4</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">5</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">6</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">7</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">8</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">9</div>
                 </div>
 
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">10</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">11</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">12</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">13</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">14</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="addDiary()">
                     <div class="calender-content-text">15</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="birthDiary()">
+                    <div class="calender-content-text">16</div>
+                </div>
+                
+                <div class="calender-content" @click="openDiary()">
+                    <div class="calender-content-text">10</div>
+                </div>
+                <div class="calender-content" @click="openDiary()">
+                    <div class="calender-content-text">11</div>
+                </div>
+                <div class="calender-content" @click="openDiary()">
+                    <div class="calender-content-text">12</div>
+                </div>
+                <div class="calender-content" @click="openDiary()">
+                    <div class="calender-content-text">13</div>
+                </div>
+                <div class="calender-content" @click="openDiary()">
+                    <div class="calender-content-text">14</div>
+                </div>
+                <div class="calender-content" @click="addDiary()">
+                    <div class="calender-content-text">15</div>
+                </div>
+                <div class="calender-content" @click="birthDiary()">
                     <div class="calender-content-text">16</div>
                 </div>
 
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">10</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">11</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">12</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">13</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">14</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="addDiary()">
                     <div class="calender-content-text">15</div>
                 </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
-                    <div class="calender-content-text">16</div>
-                </div>
-
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
-                    <div class="calender-content-text">10</div>
-                </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
-                    <div class="calender-content-text">11</div>
-                </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
-                    <div class="calender-content-text">12</div>
-                </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
-                    <div class="calender-content-text">13</div>
-                </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
-                    <div class="calender-content-text">14</div>
-                </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
-                    <div class="calender-content-text">15</div>
-                </div>
-                <div class="calender-content" @click="this.$emit('changePage', [false, false, true, false])">
+                <div class="calender-content" @click="birthDiary()">
                     <div class="calender-content-text">16</div>
                 </div>
             </div>
@@ -152,6 +152,15 @@ export default {
         }
     },
     methods: {
+        openDiary(){            
+            this.$emit('changePage', [false, false, true, false, false]);
+        },
+        addDiary(){            
+            this.$emit('changePage', [false, false, false, true, false]);
+        },
+        birthDiary(){            
+            this.$emit('changePage', [false, false, false, false, true]);
+        },
         movePage(url){
             this.$router.push(url);
         },

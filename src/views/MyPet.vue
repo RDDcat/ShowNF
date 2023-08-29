@@ -10,6 +10,7 @@
         @changePage='changePage' 
         v-if="pageNumber[2]"/>
     <MyPetAddDiary v-if="pageNumber[3]"/>
+    <MyPetDiaryBirth v-if="pageNumber[4]"/>
     <!-- 컴포넌트 변동 -->
     
 </template>
@@ -18,6 +19,7 @@ import MyPetMain from '@/components/MyPet/MyPetMain.vue'
 import MyPetCalender from '@/components/MyPet/MyPetCalender.vue'
 import MyPetDiary from '@/components/MyPet/MyPetDiary.vue'
 import MyPetAddDiary from '@/components/MyPet/MyPetAddDiary.vue'
+import MyPetDiaryBirth from '@/components/MyPet/MyPetDiaryBirth.vue'
 
 export default {
     components:{
@@ -25,11 +27,13 @@ export default {
         MyPetCalender,
         MyPetDiary,
         MyPetAddDiary,
+        MyPetDiaryBirth,
 
     },
     data(){
         return {
-            pageNumber: [true, false, false, false],
+            pageNumber: [true, false, false, false, false],
+            pageNumber_explain: ["MyPetMain", "MyPetCalender", "MyPetDiary", "MyPetAddDiary", "MyPetDiaryBirth"]
         }
     },
     methods: {

@@ -245,7 +245,7 @@
 
 .submit{
     position: absolute;
-    bottom: 6.5vh;
+    bottom: 7.5vh;
 }
 .submit-message{
     font-size: 6px;

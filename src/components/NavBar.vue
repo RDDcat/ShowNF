@@ -66,12 +66,11 @@ export default {
     background-color: white;
     
     width: 100vw;
-    height: 6vh;
+    height: 7vh;
 }
 
 .nav-content{
-    justify-content: center;
-    width: 20%;
+    width: 16.6vw;
     text-align: center;
 }
 .nav-active{
