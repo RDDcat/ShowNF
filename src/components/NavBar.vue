@@ -66,12 +66,11 @@ export default {
     background-color: white;
     
     width: 100vw;
-    height: 8vh;
+    height: 6vh;
 }
 
 .nav-content{
     justify-content: center;
-    margin-top: 8px;
     width: 20%;
     text-align: center;
 }
@@ -80,7 +79,7 @@ export default {
 }
 
 .nav-content-text{
-    font-size: 12px;
+    font-size: 8px;
 }
 
 </style>

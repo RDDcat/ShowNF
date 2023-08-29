@@ -54,7 +54,7 @@
         <div class="weight-title">몸무게</div>
         <div class="weight-input">
             <input v-model="message" placeholder="몸무게를 입력해주세요" >
-            <div class="weight-input-unit">g</div>
+            <div class="weight-input-unit">(단위: g)</div>
         </div>
     </div>
     <div class="memo">
@@ -245,7 +245,7 @@
 
 .submit{
     position: absolute;
-    bottom: 8vh;
+    bottom: 6.5vh;
 }
 .submit-message{
     font-size: 6px;
