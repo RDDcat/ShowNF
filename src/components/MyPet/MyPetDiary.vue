@@ -26,47 +26,25 @@
     <!-- -->
     <div class="food">
         <div class="food-title">먹이</div>
-        <div class="food-form">
-            <div class="food-select">
-                <select v-model="selected">
-                    <option disabled value="">하나를 선택해주세요..!</option>
-                    <option>귀뚜라미</option>
-                    <option>밀웜</option>
-                    <option>개미</option>
-                    <option>목도리도마뱀~~</option>
-                </select>
-            </div>
-            <div class="food-input">
-                <input v-model="message" placeholder="마리">
-            </div>
-            <div class="food-plus-button" @click="console.log('+1 clicked')">
-                <div class="food-plus-button-text">+1</div>
-            </div>
+        <div class="food-detail">
+            <div class="food-detail-text">애호박</div>
+            <div class="food-detail-number">1</div>
+            <div class="food-detail-unit">개</div>
         </div>
-        <div class="food-size-buttons">
-            <div class="food-size-button"><div class="food-size-button-text">극소</div></div>
-            <div class="food-size-button"><div class="food-size-button-text">소</div></div>
-            <div class="food-size-button"><div class="food-size-button-text">중</div></div>
-            <div class="food-size-button"><div class="food-size-button-text">대</div></div>
-        </div>
+    </div>
+    <div class="food-size-buttons">
+        <div class="food-size-button">극소</div>
+        <div class="food-size-button">소</div>
+        <div class="food-size-button">중</div>
+        <div class="food-size-button">대</div>
     </div>
     <div class="weight">
         <div class="weight-title">몸무게</div>
-        <div class="weight-input">
-            <input v-model="message" placeholder="몸무게를 입력해주세요" >
-            <div class="weight-input-unit">(단위: g)</div>
-        </div>
+        <div class="weight-text">33g</div>
     </div>
     <div class="memo">
         <div class="memo-title">메모</div>
-        <input placeholder="간단한 메모를 입력해주세요">
-    </div>
-    
-    <div class="submit">
-        <div class="submit-message">등록 후 하루가 지나면 수정이 불가능합니다.</div>
-        <div class="submit-button">
-            <div class="submit-button-text">등록하기</div>
-        </div>
+        <div class="memo-text">잘먹음</div>
     </div>
 
 </template>
@@ -129,59 +107,45 @@
     margin-bottom: auto;
 }
 
-.food-title{    
-    margin: 4px;
-    padding-left: 8px;
-    font-size: 12px;
-}
-.food-form{
-    display: flex;
-    margin-bottom: 8px;
-}
-.food-select{
-    margin-left: 4px;
-    margin-right: 4px;
-    height: 38px;
-    width: 50%;
-}
-.food-select select{
-    height: 100%;    
-    width: 100%;
-    border-radius: 6px;
-    border: 1px solid #acacb1;
-}
-.food-input{
-    margin-left: 4px;
-    margin-right: 8px;
-    width: 33%;
-    height: 34px;
-}
-.food-input input{
-    width: 100%;
-    height: 100%;    
-    border-radius: 6px;
-    border: 1px solid #acacb1;
-}
-.food-input input::placeholder{
-    text-align: right;
-}
-.food-plus-button{   
-    padding: 1px;
-    margin-left: 4px;
-    width: 42px;
-    height: 36px;
-    border-radius: 6px;
-    background-color: #d9d9d9;
-    align-items: center;
-}
-.food-plus-button-text{
+.food{
     margin-top: 8px;
+    margin-left: 16px;
+}
+.food-title{    
     font-size: 12px;
-    text-align: center;
+    color: #acacb1;
+}
+.food-detail{
+    display: flex;
+}
+.food-detail-text{
+    margin-left:4px;
+    margin-top:4px;
+    margin-bottom:10px;
+
+    width: 60vw;
+    font-size: 18px;
+}
+.food-detail-number{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 10vw;
+    font-size: 20px;
+    text-align: right;
+    
+}
+.food-detail-unit{
+    margin-left:8px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 12px;
+    color: #acacb1;
 }
 
 .food-size-buttons{
     display: flex;
+    margin-left: 8px;    
+    margin-right: 8px;
 }
 .food-size-button{    
     margin: 2px;
@@ -199,48 +163,33 @@
 }
 
 .weight{
-    margin:4px;
+    margin-left: 16px;
+    margin-top: 10px;
 
 }
 .weight-title{    
-    padding-left: 6px;
+    margin-top: 4px;
     font-size: 12px;
+    color: #acacb1;
 }
-.weight-input{
-    display: flex;
-}
-.weight-input input{
-    width: 46vw;
-    height: 36px;
-    border-radius: 10px;
-    border: 1px solid #acacb1;
-}
-.weight-input input::placeholder{
-    text-align: center;
-}
-.weight-input-unit{
-    margin-top: auto;
-    margin-bottom: auto;
+.weight-text{
     margin-left: 4px;
 }
 
 .memo{
-    margin:4px;
-    margin-top:12px;
+    margin-left: 16px;
+    margin-top: 10px;
 
 }
 .memo-title{
-    padding-left: 6px;
+    margin-top: 4px;
     font-size: 12px;
+    color: #acacb1;
 }
-.memo input{
-    width: 96vw;    
-    height: 20vh;
-    border-radius: 10px;
-    border: 1px solid #acacb1;
-}
-.memo input::placeholder{
-
+.memo-text{
+    margin-left:4px;
+    margin-top:4px;
+    font-size: 16px;
 }
 
 .submit{

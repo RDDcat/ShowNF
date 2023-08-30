@@ -133,6 +133,7 @@
                 </div>
                 <div class="calender-content" @click="openDiary()">
                     <div class="calender-content-text">14</div>
+                    <div class="circle"></div>
                 </div>
                 <div class="calender-content" @click="addDiary()">
                     <div class="calender-content-text">15</div>
@@ -270,14 +271,23 @@ export default {
     width: 13vw;
     height: 13vw;
     display: flex;
+    flex-direction: column;
     border-radius: 8px;
     background-color: #f6f6f9;
 
 }
 .calender-content-text{
-    margin: auto;
+    margin-top: 18%;
     text-align: center;
-    position: relative;
-    bottom: 2px;
+    width: 100%;
+    height: 36%;
+}
+
+.circle{
+    width: 1px;
+    height: 1px;
+    border: 3px solid #4df35b;
+    border-radius: 50%;
+    margin: auto;
 }
 </style>

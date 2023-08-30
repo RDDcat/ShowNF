@@ -9,8 +9,12 @@
     <MyPetDiary 
         @changePage='changePage' 
         v-if="pageNumber[2]"/>
-    <MyPetAddDiary v-if="pageNumber[3]"/>
-    <MyPetDiaryBirth v-if="pageNumber[4]"/>
+    <MyPetAddDiary 
+        @changePage='changePage' 
+        v-if="pageNumber[3]"/>
+    <MyPetDiaryBirth 
+        @changePage='changePage' 
+        v-if="pageNumber[4]"/>
     <!-- 컴포넌트 변동 -->
     
 </template>
