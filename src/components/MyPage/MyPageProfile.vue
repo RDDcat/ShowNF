@@ -43,6 +43,9 @@
                 <div class="profile-info-username">백설공주</div>
                 <div class="profile-info-userid">@snow_white21</div>
             </div>
+            <div class="follow" v-show="showFollowButton">
+                <div class="follow-text">팔로우</div>
+            </div>
             <div class="profile-info-statemessage">
                 "거울아 거울아 나를 두고 가시나"
             </div>
@@ -50,8 +53,33 @@
     </div>
 </template>
 <script>
+
+export default {
+    data(){
+        return {
+            showFollowButton: true,
+        }
+    },
+    methods: {
+
+    },
+}
 </script>
 <style scoped>
+.follow{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    width: 50px;
+    height: 24px;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 2px;
+}
+.follow-text{
+    margin: auto;
+    font-size: 10px;
+}
 .profile{
     
 }
@@ -96,7 +124,14 @@
 .profile-info-user{
     margin: 8px;
 }
+.profile-info-username{
+    font-size: 14px;
+}
+.profile-info-userid{
+    font-size: 8px;
+}
 .profile-info-statemessage{
     margin: auto;
+    font-size: 16px;
 }
 </style>
