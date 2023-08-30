@@ -133,30 +133,46 @@
     padding: 12px;
 }
 .species-card-title{
+    font-size: 12px;
+    color: #acacac;
 
 }
 .species-card-text{
+    margin-left: 4px;
+    font-size: 18px;
 
 }
 
 .birth{
+    margin-left: 12px;
+    margin-bottom: 10px;
 
 
 }
 .birth-title{
-
+    font-size: 12px;
+    color: #acacac;
 }
 .birth-text{
+    margin-left: 4px;
+    font-size: 18px;
 
 }
 
 .weight{
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 }
 .weight-title{
+    font-size: 12px;
+    color: #acacac;
 
 }
 .weight-text{
+    font-size: 18px;
+    margin-left: 4px;
 
 }
 
