@@ -13,6 +13,9 @@ import MyPageAdopt from './components/MyPageAdopt'
 import MyPageAlbum from './components/MyPageAlbum'
 import MyPageDealing from './components/MyPageDealing'
 
+import MyPageFollowingPage from'@/views/views/MyPageFollowingPage'
+import MyPageFollowerPage from'@/views/views/MyPageFollowerPage'
+
 import AccountPage from './views/views/AccountPage'
 import AchievementPage from './views/views/AchievementPage'
 import AlermPage from './views/views/AlermPage'
@@ -47,6 +50,8 @@ const router = createRouter({
             { path: "album", component: MyPageAlbum},
             { path: "dealing", component: MyPageDealing},
         ]},
+        { path: "/follower", component: MyPageFollowingPage},
+        { path: "/following", component: MyPageFollowerPage},
 
         { path: "/account", component: AccountPage},
         { path: "/achievement", component: AchievementPage},
