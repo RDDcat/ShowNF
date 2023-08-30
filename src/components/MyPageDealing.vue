@@ -1,22 +1,22 @@
 <template>
     <div class="filters">
         <div class="filter">
-            <img class="filter-img" src="../assets/sample.png">
+            <img class="filter-img" src="assets/logo.png">
             <div class="filter-text">입양</div>
         </div>
         <div class="filter">
-            <img class="filter-img" src="../assets/sample.png">
+            <img class="filter-img" src="assets/logo.png">
             <div class="filter-text">분양</div>
         </div>
         <div class="filter">
-            <img class="filter-img" src="../assets/sample.png">
+            <img class="filter-img" src="assets/logo.png">
             <div class="filter-text">CITES 인증</div>
         </div>
     </div>
     <div class="content">
         <div class="card">
             <div class="card-left">
-                <img class="card-img" src="../assets/sample.png">
+                <img class="card-img" src="assets/logo.png">
             </div>
             <div class="card-right">
                 <div class="card-title">
@@ -26,7 +26,7 @@
                 <div class="card-review">
                     <div class="card-review-title">후기</div>
                     <div class="card-review-user">
-                        <img class="card-review-user-img" src="../assets/sample.png">
+                        <img class="card-review-user-img" src="assets/logo.png">
                         <div class="card-review-username">닉네임 백설</div>
                     </div>
                     <div class="card-review-text">
@@ -35,11 +35,11 @@
                     <div class="card-review-star">
                         <div class="card-review-star-text">별점</div>
                         <div>
-                            <img class="card-review-star-img" src="../assets/sample.png">
-                            <img class="card-review-star-img" src="../assets/sample.png">
-                            <img class="card-review-star-img" src="../assets/sample.png">
-                            <img class="card-review-star-img" src="../assets/sample.png">
-                            <img class="card-review-star-img" src="../assets/sample.png">
+                            <img class="card-review-star-img" src="assets/logo.png">
+                            <img class="card-review-star-img" src="assets/logo.png">
+                            <img class="card-review-star-img" src="assets/logo.png">
+                            <img class="card-review-star-img" src="assets/logo.png">
+                            <img class="card-review-star-img" src="assets/logo.png">
                         </div>
                     </div>
                 </div>

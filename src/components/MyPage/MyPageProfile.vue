@@ -1,7 +1,7 @@
 <template>
     <div class="profile">
         <div class="profile-static">
-            <img class="profile-img" src="@/assets/sample.png">
+            <img class="profile-img" src="@/assets/logo.png">
             <div class="profile-statics">
                 <div class="profile-statics-card">
                     <div class="profile-statics-card-title">활동일수</div>

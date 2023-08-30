@@ -1,9 +1,9 @@
 <template>
     <div class="medal">
-        <img class="medal-img" src="@/assets/sample.png">
-        <img class="medal-img" src="@/assets/sample.png">
-        <img class="medal-img" src="@/assets/sample.png">
-        <img class="medal-img" src="@/assets/sample.png">
+        <img class="medal-img" src="@/assets/logo.png">
+        <img class="medal-img" src="@/assets/logo.png">
+        <img class="medal-img" src="@/assets/logo.png">
+        <img class="medal-img" src="@/assets/logo.png">
     </div>
 </template>
 <script>

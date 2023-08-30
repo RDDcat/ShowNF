@@ -1,7 +1,7 @@
 <template>
 <v-bottom-navigation class="nav">
     <div class="nav-content" :class="this.pageActive[index] ? 'nav-active' : ''" v-for="(page, index) in pages" :key="index" @click="movePage(page.link.url); activePage(index) ">
-        <img src="../assets/sample.png" width="32" height="32">
+        <img src="assets/logo.png" width="32" height="32">
         <div class="nav-content-text">{{ page.link.text }}</div>
     </div>
 </v-bottom-navigation>

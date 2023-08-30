@@ -2,10 +2,10 @@
 <template>
     <div class="top">
         <div class="top-title">스와이프</div>
-        <div class="mybox"><img src="../assets/sample.png"></div>
+        <div class="mybox"><img src="assets/logo.png"></div>
     </div>
     <div class="content-imgtag">
-        <img class="content-imgtag" src="../assets/sample.png" @click="movePage('/storage/album')">
+        <img class="content-imgtag" src="assets/logo.png" @click="movePage('/storage/album')">
     </div>
 </template>
 <script>

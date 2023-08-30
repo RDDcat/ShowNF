@@ -1,93 +1,93 @@
 <template>
     <div class="content">
         <div class="item">
-            <img class="item-img" src="../assets/sample.png">
+            <img class="item-img" src="assets/logo.png">
             <div class="item-describes">
                 <div class="item-describe">
                     <div class="item-describe-count">1</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
                 <div class="item-describe">
                     <div class="item-describe-count">12</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
             </div>
         </div>
         <div class="item">
-            <img class="item-img" src="../assets/sample.png">
+            <img class="item-img" src="assets/logo.png">
             <div class="item-describes">
                 <div class="item-describe">
                     <div class="item-describe-count">1</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
                 <div class="item-describe">
                     <div class="item-describe-count">12</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
             </div>
         </div>
         <div class="item">
-            <img class="item-img" src="../assets/sample.png">
+            <img class="item-img" src="assets/logo.png">
             <div class="item-describes">
                 <div class="item-describe">
                     <div class="item-describe-count">1</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
                 <div class="item-describe">
                     <div class="item-describe-count">12</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
             </div>
         </div>
         <div class="item">
-            <img class="item-img" src="../assets/sample.png">
+            <img class="item-img" src="assets/logo.png">
             <div class="item-describes">
                 <div class="item-describe">
                     <div class="item-describe-count">1</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
                 <div class="item-describe">
                     <div class="item-describe-count">12</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
             </div>
         </div>
         <div class="item">
-            <img class="item-img" src="../assets/sample.png">
+            <img class="item-img" src="assets/logo.png">
             <div class="item-describes">
                 <div class="item-describe">
                     <div class="item-describe-count">1</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
                 <div class="item-describe">
                     <div class="item-describe-count">12</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
             </div>
         </div>
         <div class="item">
-            <img class="item-img" src="../assets/sample.png">
+            <img class="item-img" src="assets/logo.png">
             <div class="item-describes">
                 <div class="item-describe">
                     <div class="item-describe-count">1</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
                 <div class="item-describe">
                     <div class="item-describe-count">12</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
             </div>
         </div>
         <div class="item">
-            <img class="item-img" src="../assets/sample.png">
+            <img class="item-img" src="assets/logo.png">
             <div class="item-describes">
                 <div class="item-describe">
                     <div class="item-describe-count">1</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
                 <div class="item-describe">
                     <div class="item-describe-count">12</div>
-                    <img class="item-describe-img" src="../assets/sample.png">
+                    <img class="item-describe-img" src="assets/logo.png">
                 </div>
             </div>
         </div>

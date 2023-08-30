@@ -2,7 +2,7 @@
     <div class="top">
         <div class="balance"></div>
         <div class="top-title">마이페이지</div>
-        <img class="top-menu" src="@/assets/sample.png" @click="this.$emit('onMenu')">
+        <img class="top-menu" src="@/assets/logo.png" @click="this.$emit('onMenu')">
     </div>
 </template>
 <script>

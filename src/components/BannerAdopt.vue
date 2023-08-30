@@ -1,10 +1,10 @@
 <template>
     <div class="top">
-        <img class='top-search-icon' src="../assets/sample.png" width="24">
+        <img class='top-search-icon' src="assets/logo.png" width="24">
     </div>
     <div class='banner'>
         <div class='banner-content'>
-            <img class='banner-content-imgtag' src="../assets/sample.png">
+            <img class='banner-content-imgtag' src="assets/logo.png">
         </div>
     </div>
 </template>

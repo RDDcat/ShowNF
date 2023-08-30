@@ -1,25 +1,25 @@
 <template>
     <div class="filters">
         <div class="filter">
-            <img class="filter-img" src="../assets/sample.png">
+            <img class="filter-img" src="assets/logo.png">
             <div class="filter-text">CITES 인증</div>
         </div>
     </div>
     <div class="content">
         <div class="item">
-            <img class="item-img" src="../assets/sample.png">
+            <img class="item-img" src="assets/logo.png">
             <div class="item-price">126,000원</div>
         </div>
         <div class="item">
-            <img class="item-img" src="../assets/sample.png">
+            <img class="item-img" src="assets/logo.png">
             <div class="item-price">126,000원</div>
         </div>
         <div class="item">
-            <img class="item-img" src="../assets/sample.png">
+            <img class="item-img" src="assets/logo.png">
             <div class="item-price">126,000원</div>
         </div>
         <div class="item">
-            <img class="item-img" src="../assets/sample.png">
+            <img class="item-img" src="assets/logo.png">
             <div class="item-price">126,000원</div>
         </div>
     </div>

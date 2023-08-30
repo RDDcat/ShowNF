@@ -1,12 +1,12 @@
 <template>
     <div class="content">
         <div class="content-card">
-            <div class="content-card-img"><img class="content-card-imgtag" src="../assets/sample.png"></div>
+            <div class="content-card-img"><img class="content-card-imgtag" src="assets/logo.png"></div>
             <div class="content-card-price">175,000원</div>
             <div class="content-card-title">비어디 드래곤 (bearded dragon)</div>
         </div>
         <div class="content-card">
-            <div class="content-card-img"><img class="content-card-imgtag" src="../assets/sample.png"></div>
+            <div class="content-card-img"><img class="content-card-imgtag" src="assets/logo.png"></div>
             <div class="content-card-price">175,000원</div>
             <div class="content-card-title">비어디 드래곤 (bearded dragon)</div>
         </div>
