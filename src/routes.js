@@ -50,8 +50,8 @@ const router = createRouter({
             { path: "album", component: MyPageAlbum},
             { path: "dealing", component: MyPageDealing},
         ]},
-        { path: "/follower", component: MyPageFollowingPage},
-        { path: "/following", component: MyPageFollowerPage},
+        { path: "/follower", component: MyPageFollowerPage},
+        { path: "/following", component: MyPageFollowingPage},
 
         { path: "/account", component: AccountPage},
         { path: "/achievement", component: AchievementPage},
