@@ -24,7 +24,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'KOTRA_GOTHIC';
+  font-family: 'KBO Dia Gothic_medium';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -41,6 +41,10 @@ export default {
 @font-face {
   font-family:'KOTRA_SONGEULSSI';
   src: url('assets/font/KOTRA_SONGEULSSI.ttf');
+}
+@font-face {
+  font-family:'KBO Dia Gothic_medium';
+  src: url('assets/font/KBO Dia Gothic_medium.ttf');
 }
 
 body{
