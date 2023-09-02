@@ -22,7 +22,7 @@
             <img src="assets/logo.png" width="16" height="16">
         </div>
     </div>
-    
+
     <div class="pet-cards">
         <div class="pet-card">
             <div class="pet-card-frame" @click="this.$emit('changePage', [false, true, false, false])">
@@ -80,6 +80,7 @@ export default {
 <style scoped>
 .top{
     display: flex;
+    height: 40px;
 }
 .top-title{
     margin: auto;
@@ -123,8 +124,6 @@ export default {
     text-align: center;
 }
 
-
-
 .left-arrow{
     margin-left: 1.5vw;
     margin-top: auto;
@@ -135,6 +134,7 @@ export default {
     margin-top: auto;
     margin-bottom: auto;
 }
+
 .pet-cards{
     display: flex;
     flex-wrap : wrap;

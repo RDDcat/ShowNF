@@ -108,6 +108,7 @@ export default{
 <style scoped>
 .top{
     display: flex;
+    height: 40px;
 }
 .top-title{
     margin: auto;

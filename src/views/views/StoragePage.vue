@@ -4,6 +4,7 @@
         <div class="top-text">보관함</div>
         <div class="balance"></div>
     </div>
+    
     <NavBarStorage/>
     <router-view></router-view>
 </template>
@@ -35,6 +36,7 @@ export default{
 <style scoped>
 .top{
     display: flex;
+    height: 40px;
 }
 .top-text{
     width: 100%;

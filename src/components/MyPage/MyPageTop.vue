@@ -20,6 +20,7 @@ export default{
 }
 .top{
     display: flex;
+    height: 40px;
 }
 .top-title{
     font-size: 18px;
