@@ -10,7 +10,7 @@ export default {
     methods:{
         moveBack(){
             console.log('모달창 닫기');
-            this.$emit('openImageModal', false);
+            this.$emit('closeImageModal');
         },
     },
 }

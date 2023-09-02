@@ -1,29 +1,29 @@
 <template>
     <div class='contents'>        
         <div class="content">
-            <img class="content-img" src="@/assets/logo.png" @click="OpenImageModal">
+            <img class="content-img" src="@/assets/logo.png" @click="openImageModal">
             <div class="content-title">싱글벙글</div>
             <div class="content-price">175,000 원</div>
             <div class="content-username">user1</div>
         </div>
         
         <div class="content">
-            <img class="content-img" src="@/assets/logo.png" @click="OpenImageModal">
+            <img class="content-img" src="@/assets/logo.png" @click="openImageModal">
             <div class="content-title">싱글벙글</div>
             <div class="content-price">175,000 원</div>
             <div class="content-username">user1</div>
         </div>
         
         <div class="content">
-            <img class="content-img" src="@/assets/logo.png" @click="OpenImageModal">
+            <img class="content-img" src="@/assets/logo.png" @click="openImageModal">
             <div class="content-title">싱글벙글</div>
             <div class="content-price">175,000 원</div>
             <div class="content-username">user1</div>
         </div>
     </div>
     <StorageImageModal 
-        @openImageModal='openImageModal' 
-        v-if="openImageModal" />
+        @closeImageModal='imageModal=false' 
+        v-if="imageModal" />
 </template>
 <script>
 import StorageImageModal from '@/components/StoragePage/StorageImageModal.vue'
@@ -35,12 +35,12 @@ export default {
     },
     data(){
         return {
-            openImageModal: false,
+            imageModal: false,
         }
     },
     methods: {
-        OpenImageModal(){
-            this.openImageModal = true;
+        openImageModal(){
+            this.imageModal = true;
         },
     },
 }
