@@ -20,9 +20,6 @@ export default{
     methods: {
         
     },
-    mounted() {
-        
-    },
 };
 </script>
 <style scoped>

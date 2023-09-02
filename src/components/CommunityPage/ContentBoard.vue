@@ -5,16 +5,16 @@
                 <div class="board-link"><img src="@/assets/logo.png"></div>
             </div>
             <div class="board-cards">
-                <BoardCard/>
+                <CommunityContentCard/>
             </div>
         </div>
 </template>
 <script>
-import BoardCard from "@/components/CommunityPage/BoardCard.vue";
+import CommunityContentCard from "@/components/CommunityPage/CommunityContentCard.vue";
 
 export default{
     components: {
-        BoardCard,
+        CommunityContentCard,
     },
 }
 </script>

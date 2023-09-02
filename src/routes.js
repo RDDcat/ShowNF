@@ -1,7 +1,10 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import MainPage from './views/MainPage'
 import AdoptPage from './views/AdoptPage'
-import CommunityPage from './views/CommunityPage'
+
+import CommunityPage from '@/views/Community/CommunityPage'
+import CommunityAddPost from '@/views/Community/CommunityAddPost'
+
 import SwipePage from './views/SwipePage'
 
 import MyPet from './views/MyPet'
@@ -38,6 +41,8 @@ const router = createRouter({
         { path: "/adopt", component: AdoptPage},
 
         { path: "/community", component: CommunityPage},
+        { path: "/community/add", component: CommunityAddPost},
+
 
         { path: "/swipe", component: SwipePage},
 

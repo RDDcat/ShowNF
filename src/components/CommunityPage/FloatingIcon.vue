@@ -8,7 +8,7 @@
 export default{
     methods: {
         moveAddPost(){
-            console.log('게시글 작성으로 이동');
+            this.$router.push('/community/add');
         },
     },
 }
