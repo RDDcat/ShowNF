@@ -2,7 +2,7 @@
     <div class="board">
             <div class="board-title">
                 <div class="board-title-text">HOT 게시글</div>
-                <div class="board-link"><img src="@/assets/sample.png"></div>
+                <div class="board-link"><img src="@/assets/logo.png"></div>
             </div>
             <div class="board-cards">
                 <BoardCard/>
@@ -10,7 +10,7 @@
         </div>
 </template>
 <script>
-import BoardCard from "../small/BoardCard.vue";
+import BoardCard from "@/components/CommunityPage/BoardCard.vue";
 
 export default{
     components: {

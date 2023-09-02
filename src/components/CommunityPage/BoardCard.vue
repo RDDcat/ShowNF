@@ -1,6 +1,6 @@
 <template>
     <div class="board-card">
-        <img src="assets/sample.png">
+        <img src="@/assets/logo.png">
         <h2>귀여움에 빠져랏</h2>
         <div class="user-name">백설</div>
     </div>
