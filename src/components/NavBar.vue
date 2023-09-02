@@ -1,7 +1,7 @@
 <template>
 <v-bottom-navigation class="nav">
     <div class="nav-content" :class="this.pageActive[index] ? 'nav-active' : ''" v-for="(page, index) in pages" :key="index" @click="movePage(page.link.url); activePage(index) ">
-        <img src="assets/logo.png" width="32" height="32">
+        <i :class="page.icon"></i>
         <div class="nav-content-text">{{ page.link.text }}</div>
     </div>
 </v-bottom-navigation>
@@ -15,32 +15,32 @@ export default {
             {
                 link : {text:'홈', url: '/'},
                 pageTitle: 'MainPage',
-                img: '../assets'
+                icon: "fa-solid fa-house fa-2x"
             },
             {
                 link : {text:'분양', url: '/adopt'},
                 pageTitle: 'AdoptPage',
-                img: '../assets'
+                icon: "fa-solid fa-house fa-2x"
             },
             {
                 link : {text:'커뮤', url: '/community'},
                 pageTitle: 'CommunityPage',
-                img: '../assets'
+                icon: "fa-solid fa-house fa-2x"
             },
             {
                 link : {text:'좋아', url: '/swipe'},
                 pageTitle: 'SwipePage',
-                img: '../assets'
+                icon: "fa-solid fa-house fa-2x"
             },
             {
                 link : {text:'마이펫', url: '/pet'},
                 pageTitle: 'SwipePage',
-                img: '../assets'
+                icon: "fa-solid fa-house fa-2x"
             },
             {
                 link : {text:'마이', url: '/my/main'},
                 pageTitle: 'Mypage',
-                img: '../assets'
+                icon: "fa-solid fa-user fa-2x",
             },
         ]
         }
@@ -73,6 +73,9 @@ export default {
     width: 16.6vw;
     text-align: center;
 }
+.nav-content i{   
+    margin-bottom: 4px; 
+}
 .nav-active{
     background-color: #d9d9d9;
 }
@@ -80,5 +83,6 @@ export default {
 .nav-content-text{
     font-size: 8px;
 }
+
 
 </style>
