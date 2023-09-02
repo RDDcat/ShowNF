@@ -1,19 +1,19 @@
 <template>
     <div class='contents'>
         <div class="content">
-            <img class="content-img" src="../assets/logo.png" >
+            <img class="content-img" src="@/assets/logo.png" >
         </div>
         <div class="content">
-            <img class="content-img" src="../assets/logo.png" >
+            <img class="content-img" src="@/assets/logo.png" >
         </div>        
         <div class="content">
-            <img class="content-img" src="../assets/logo.png" >
+            <img class="content-img" src="@/assets/logo.png" >
         </div>
         <div class="content">
-            <img class="content-img" src="../assets/logo.png" >
+            <img class="content-img" src="@/assets/logo.png" >
         </div>        
         <div class="content">
-            <img class="content-img" src="../assets/logo.png" >
+            <img class="content-img" src="@/assets/logo.png" >
         </div>
     </div>
 </template>

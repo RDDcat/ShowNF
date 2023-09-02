@@ -25,9 +25,9 @@ import PointPage from './views/views/PointPage'
 import SettingPage from './views/views/SettingPage'
 
 import StoragePage from './views/views/StoragePage'
-import StorageAlbum from '@/components/StorageAlbum'
-import StorageCommunity from '@/components/StorageCommunity'
-import StorageAdopt from '@/components/StorageAdopt'
+import StorageAlbum from '@/components/StoragePage/StorageAlbum'
+import StorageCommunity from '@/components/StoragePage/StorageCommunity'
+import StorageAdopt from '@/components/StoragePage/StorageAdopt'
 
 
 const router = createRouter({
