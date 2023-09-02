@@ -4,25 +4,46 @@
     </div>
     <div class='contents'>        
         <div class="content">
-            <img class="content-img" src="@/assets/logo.png">
+            <img class="content-img" src="@/assets/logo.png" @click="openImageModal">
             <div class="content-title">싱글벙글</div>
             <div class="content-username">user1</div>
         </div>
         
         <div class="content">
-            <img class="content-img" src="@/assets/logo.png">
+            <img class="content-img" src="@/assets/logo.png" @click="openImageModal">
             <div class="content-title">싱글벙글</div>
             <div class="content-username">user1</div>
         </div>
         
         <div class="content">
-            <img class="content-img" src="@/assets/logo.png">
+            <img class="content-img" src="@/assets/logo.png" @click="openImageModal">
             <div class="content-title">싱글벙글</div>
             <div class="content-username">user1</div>
         </div>
     </div>
+    <StorageImageModal 
+        @closeImageModal='imageModal=false' 
+        v-if="imageModal" />
 </template>
 <script>
+import StorageImageModal from '@/components/StoragePage/StorageImageModal.vue'
+
+
+export default {    
+    components:{
+        StorageImageModal,
+    },
+    data(){
+        return {
+            imageModal: false,
+        }
+    },
+    methods: {
+        openImageModal(){
+            this.imageModal = true;
+        },
+    },
+}
 </script>
 <style scoped>
 .top-text{
