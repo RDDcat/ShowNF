@@ -8,6 +8,9 @@
                 <div class="following-name">{{ user.username }}</div>
                 <div class="following-id">{{ user.userid }}</div>
             </div>
+            <div class="following-button">
+                <div class="following-button-text">팔로잉</div>
+            </div>
         </div>
     </div>
 
@@ -70,7 +73,7 @@ export default {
     height: 50px;
 }
 .following-detail{    
-    width: 78vw;
+    width: 50vw;
     margin-top: auto;    
     margin-bottom: auto;
     margin-left: 2vw;
@@ -82,6 +85,20 @@ export default {
 .following-id{
     font-size: 10px;
     color: #acacb1;
+}
+.following-button{
+    display: flex;
+    margin-top: auto;    
+    margin-bottom: auto;
+    width: 65px;
+    height: 30px;
+    background-color: #acacb1;
+    border-radius: 10px;
+}
+.following-button-text{
+    margin: auto;
+    font-size: 12px;
+
 }
 
 </style>
