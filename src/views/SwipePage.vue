@@ -20,7 +20,15 @@ export default{
     mounted() {
         apiTest.getTestDAO()
         .then(function (response){
-            console.log("getTestDAO : ", response);
+            console.log("getSwipeImage : ", response);
+        })
+        .catch(function (e){
+            console.log(e);
+        });
+
+        apiTest.getSwipeImage()
+        .then(function (response){
+            console.log("getSwipeImage : ", response);
         })
         .catch(function (e){
             console.log(e);
