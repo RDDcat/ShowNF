@@ -6,11 +6,11 @@
     </div>
 
     <div class="follow-navs"> 
-        <div class="follow-nav">
+        <div class="follow-nav" @click='pages=[true, false]'>
             <div class="follow-nav-title">팔로워</div>
             <div class="follow-nav-line" v-show="pages[0]"></div>
         </div>
-        <div class="follow-nav">
+        <div class="follow-nav" @click='pages=[false, true]'>
             <div class="follow-nav-title">팔로잉</div>
             <div class="follow-nav-line" v-show="pages[1]"></div>
         </div>

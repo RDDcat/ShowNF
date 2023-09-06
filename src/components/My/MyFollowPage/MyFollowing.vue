@@ -1,12 +1,12 @@
 <template>
-    <div class="followers">
-        <div class="follower">
-            <div class="follower-img">
+    <div class="followings">
+        <div class="following" v-for="user in user_data" :key="user.userid">
+            <div class="following-img">
                 <img src="@/assets/logo.png">
             </div>
-            <div class="follower-detail">
-                <div class="follower-name"></div>
-                <div class="follower-id"></div>
+            <div class="following-detail">
+                <div class="following-name">{{ user.username }}</div>
+                <div class="following-id">{{ user.userid }}</div>
             </div>
         </div>
     </div>
@@ -21,7 +21,27 @@ export default {
     },
     data(){
         return {
-
+            user_data: [{
+                username: "하드카이트",
+                userid: "@hard_kite"
+            },
+            {
+                username: "이거얼마에요",
+                userid: "@whatsinyourback"
+            },
+            {
+                username: "오늘도축제야",
+                userid: "@star2wanttoplay"
+            },
+            {
+                username: "plus",
+                userid: "@pluss"
+            },
+            {
+                username: "포스트로핏",
+                userid: "@postrofit"
+            },
+            ],
         }
     },
     methods: {
@@ -30,29 +50,38 @@ export default {
 }
 </script>
 <style scoped>
-.followers{
+.followings{
     display: flex;
+    flex-direction: column;
 }
-.follower{
+.following{
     width: 100vw;
+    height: 70px;
     display: flex;
 }
-.follower-img{
+.following-img{
+    display: flex;
     width: 20vw;
     height: 100%;
 }
-.follower-img img{
-    width: 100%;
-    height: 100%;
+.following-img img{
+    margin: auto;
+    width: 50px;
+    height: 50px;
 }
-.follower-detail{
-
+.following-detail{    
+    width: 78vw;
+    margin-top: auto;    
+    margin-bottom: auto;
+    margin-left: 2vw;
 }
-.follower-name{
-
+.following-name{
+    font-size: 12px;
+    margin-bottom: 4px;
 }
-.follower-id{
-
+.following-id{
+    font-size: 10px;
+    color: #acacb1;
 }
 
 </style>
