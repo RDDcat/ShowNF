@@ -30,12 +30,12 @@ export default {
                 userid: "@yonom24"
             },
             {
-                username: "요놈물건이네",
-                userid: "@yonom24"
+                username: "오늘도축제야",
+                userid: "@star2wanttoplay"
             },
             {
-                username: "요놈물건이네",
-                userid: "@yonom24"
+                username: "혁명적인거북이",
+                userid: "@haha19"
             },
             ],
         }
@@ -48,6 +48,7 @@ export default {
 <style scoped>
 .followers{
     display: flex;
+    flex-direction: column;
 }
 .follower{
     width: 100vw;
