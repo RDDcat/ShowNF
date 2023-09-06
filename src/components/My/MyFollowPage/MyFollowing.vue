@@ -1,5 +1,6 @@
 <template>
     <div class="sample">팔로잉</div>
+    
 </template>
 <script>
 
@@ -14,7 +15,9 @@ export default {
         }
     },
     methods: {
-
+        moveMyPage(){
+            this.$router.push('/my');
+        },
     },
 }
 </script>
