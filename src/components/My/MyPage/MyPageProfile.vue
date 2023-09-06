@@ -7,11 +7,11 @@
                     <div class="profile-statics-card-title">활동일수</div>
                     <div class="profile-statics-card-content">+182일</div>
                 </div>
-                <div class="profile-statics-card" @click="movePage('/follower')">
+                <div class="profile-statics-card" @click="movePage('/follow')">
                     <div class="profile-statics-card-title">팔로워</div>
                     <div class="profile-statics-card-content">823</div>
                 </div>
-                <div class="profile-statics-card" @click="movePage('/following')">
+                <div class="profile-statics-card" @click="movePage('/follow')">
                     <div class="profile-statics-card-title">팔로잉</div>
                     <div class="profile-statics-card-content">1198</div>
                 </div>

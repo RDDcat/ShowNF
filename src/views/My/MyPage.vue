@@ -18,11 +18,11 @@
 
 </template>
 <script>
-import MyPageTop from '@/components/MyPage/MyPageTop'
-import MyPageProfile from '@/components/MyPage/MyPageProfile'
-import MyPageXP from '@/components/MyPage/MyPageXP'
+import MyPageTop from '@/components/My/MyPage/MyPageTop'
+import MyPageProfile from '@/components/My/MyPage/MyPageProfile'
+import MyPageXP from '@/components/My/MyPage/MyPageXP'
 import SideNavModal from '@/components/modal/SideNavModal'
-import MyPageMedal from '@/components/MyPage/MyPageMedal'
+import MyPageMedal from '@/components/My/MyPage/MyPageMedal'
 import NavBarProfile from '@/components/NavBarProfile'
 
 export default{

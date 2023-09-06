@@ -10,15 +10,13 @@ import SwipePage from './views/SwipePage'
 import MyPet from './views/MyPet'
 import MyPetAdd from '@/components/MyPet/MyPetAdd'
 
-import MyPage from './views/MyPage'
+import MyPage from '@/views/My/MyPage'
 import MyPageMain from './components/MyPageMain'
 import MyPageAdopt from './components/MyPageAdopt'
 import MyPageAlbum from './components/MyPageAlbum'
 import MyPageDealing from './components/MyPageDealing'
 
-import MyPageFollowingPage from'@/views/views/MyPageFollowingPage'
-import MyPageFollowerPage from'@/views/views/MyPageFollowerPage'
-
+import MyFollowPage from'@/views/My/MyFollowPage'
 import AccountPage from './views/views/AccountPage'
 import AchievementPage from './views/views/AchievementPage'
 import AlermPage from './views/views/AlermPage'
@@ -55,8 +53,7 @@ const router = createRouter({
             { path: "album", component: MyPageAlbum},
             { path: "dealing", component: MyPageDealing},
         ]},
-        { path: "/follower", component: MyPageFollowerPage},
-        { path: "/following", component: MyPageFollowingPage},
+        { path: "/follow", component: MyFollowPage},
 
         { path: "/account", component: AccountPage},
         { path: "/achievement", component: AchievementPage},
