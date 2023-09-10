@@ -12,8 +12,9 @@ export default {
     },
     
     // 스와이프
-    getSwipeImage: function(){
-        return axios.get(BASE_URL + `image`);
+    getSwipeImage: function(page){
+        if(!page){page = 0;}
+        return axios.get(BASE_URL + `image` + '?page='+ page);
     },
 
 }
