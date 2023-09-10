@@ -13,6 +13,8 @@ import BannerMain from '@/components/MainPage/BannerMain.vue'
 import CategoryTwoline from '@/components/MainPage/CategoryTwoline.vue'
 import ContentTitleLinkTwoCard from '@/components/MainPage/ContentTitleLinkTwoCard.vue'
 
+import apiTest from '@/api/test';
+
 export default{
     components: {
         TopMain,
@@ -41,6 +43,13 @@ export default{
     },
     mounted() {
         this.contents = this.getContents();
+        apiTest.getTestDAO()
+        .then(function (response){
+            console.log("test : ", response);
+        })
+        .catch(function (e){
+            console.log(e);
+        });
     },
 };
 

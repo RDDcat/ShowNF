@@ -1,34 +1,39 @@
 <!-- 스와이프 페이지 -->
 <template>
     <div class="top">
-        <div class="top-title">스와이프</div>
-        <div class="mybox"><img src="assets/logo.png"></div>
+        <div class="top-title" @click="pringData">스와이프</div>
+        <div class="mybox"><img src="assets/logo.png" @click="movePage('/storage/album')"></div>
     </div>
     <div class="content-imgtag">
-        <img class="content-imgtag" src="assets/logo.png" @click="movePage('/storage/album')">
+        <img :src="content[0].imageUrl">
+        {{this.content}}
     </div>
 </template>
 <script>
 import apiTest from '@/api/test';
 
 export default{
+    data(){
+        return {
+            data: [],
+            content: [],
+        }
+    },
     methods: {
+        pringData(){
+            console.log("data : ", this.data);
+
+        },
         movePage(url){
             this.$router.push(url);
         },
     },
-    mounted() {
-        apiTest.getTestDAO()
-        .then(function (response){
-            console.log("getSwipeImage : ", response);
-        })
-        .catch(function (e){
-            console.log(e);
-        });
-
+    beforeCreate() {
         apiTest.getSwipeImage()
-        .then(function (response){
+        .then(response=>{
             console.log("getSwipeImage : ", response);
+            this.data = response.data;
+            this.content = Array.from(this.data.content);
         })
         .catch(function (e){
             console.log(e);
