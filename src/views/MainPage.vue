@@ -40,9 +40,7 @@ export default{
         }
     },
     mounted() {
-        console.log(this.contents);
         this.contents = this.getContents();
-        console.log(this.contents);
     },
 };
 
