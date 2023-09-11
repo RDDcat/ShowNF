@@ -7,9 +7,9 @@
 
 </template>
 <script>
-import CategoryTwoline from '@/components/MainPage/CategoryTwoline.vue'
-import BannerAdopt from '@/components/BannerAdopt.vue'
-import ContentTwoCardPriceTitle from '@/components/ContentTwoCardPriceTitle.vue'
+import CategoryTwoline from '@/components/AdoptPage/CategoryTwoline.vue'
+import BannerAdopt from '@/components/AdoptPage/BannerAdopt.vue'
+import ContentTwoCardPriceTitle from '@/components/AdoptPage/ContentTwoCardPriceTitle.vue'
 
 export default{
     components: {
