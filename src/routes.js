@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import MainPage from '@/views/MainPage'
+
 import AdoptPage from '@/views/Adopt/AdoptPage'
+import AdoptPostPage from '@/views/Adopt/AdoptPostPage'
 
 import CommunityPage from '@/views/Community/CommunityPage'
 import CommunityAddPostPage from '@/views/Community/CommunityAddPostPage'
@@ -37,6 +39,7 @@ const router = createRouter({
         { path: "/", component: MainPage},
 
         { path: "/adopt", component: AdoptPage},
+        { path: "/adopt/post", component: AdoptPostPage},
 
         { path: "/community", component: CommunityPage},
         { path: "/community/add", component: CommunityAddPostPage},

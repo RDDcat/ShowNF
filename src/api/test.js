@@ -10,6 +10,12 @@ export default {
     getTestDAOWithParam: function(id){
         return axios.get(BASE_URL + `test/${id}`);
     },
+
+    // 분양
+    // 분양게시글 (인데 당장은 커뮤니티 게시글)
+    getAdoptPostDAO: function(postId){
+        return axios.get(BASE_URL + `post/` + postId);
+    },
     
     // 스와이프
     getSwipeImage: function(page){
