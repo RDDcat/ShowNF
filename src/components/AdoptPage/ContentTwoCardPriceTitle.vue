@@ -15,6 +15,19 @@
 <script>
 
 
+export default {
+    components: {
+
+    },
+    data(){
+        return {
+
+        }
+    },
+    methods: {
+
+    },
+}
 </script>
 <style scoped>
 .content{
