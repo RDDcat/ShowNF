@@ -9,6 +9,11 @@
 
 </script>
 <style scoped>
+.board-card{
+    margin-top: 4px;
+    margin-bottom: 8px;
+    margin-right:6px;
+}
 
 
 </style>

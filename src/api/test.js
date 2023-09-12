@@ -16,7 +16,24 @@ export default {
     getAdoptPostDAO: function(postId){
         return axios.get(BASE_URL + `post/` + postId);
     },
-    
+
+    // 커뮤니티
+    // 커뮤티니 게시글 전체 조회
+    // 핫게시판 조회
+    getHotPosts: function(){
+        return axios.get(BASE_URL + `post/hot`);
+    },
+    // 커뮤니티 카테고리별 조회
+    getPosts: function(category){
+        console.log(BASE_URL + `post/category/` + category);
+        return axios.get(BASE_URL + `post/category/` + category);
+    },
+
+    // 커뮤니티 게시글 개별 조회
+    getPost: function(postId){
+        return axios.get(BASE_URL + `post/` + postId);
+    },
+
     // 스와이프
     getSwipeImage: function(page){
         if(!page){page = 0;}

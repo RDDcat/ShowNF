@@ -2,7 +2,7 @@
 <template>    
     <!-- 상단 -->
     <div class="top">
-        <img class="top-back" src="@/assets/logo.png" @click="this.$router.go(-1);">
+        <i class="fa-solid fa-xmark fa-2x top-back" @click="this.$router.go(-1);"></i>
         <div class="top-title">분양게시글</div>
         <div class="balance"></div>
     </div>
@@ -10,6 +10,7 @@
     <!-- 이미지 배너 -->
     <div class="images">
         <div class="image">
+            <img :src="content_img">
         </div>
     </div>
 
@@ -28,18 +29,25 @@ export default {
     },
     data(){
         return {
-            testPostId: "",
+            testPostId: "0",
             data: [],
+            content_img: "",
         }
     },
     methods: {
 
     },
-    beforeCreate(){
+    mounted(){
         apiTest.getAdoptPostDAO(this.testPostId)
         .then(response=>{
-            console.log("getAdoptPostDAO : ", response);
             this.data = response.data;
+            console.log("this.data.content : ", this.data.content);
+            var object1 = JSON.parse(this.data.content);
+            console.log("this.object1 : ", object1);
+            console.log("this.object1 : ", object1[0]);
+            
+            this.content_img = this.data.content[0].imageUrl;
+            console.log("this.content_img : ", this.content_img);
         })
         .catch(function (e){
             console.log(e);
@@ -73,5 +81,8 @@ export default {
 }
 .image{
     
+}
+.image img{
+
 }
 </style>
