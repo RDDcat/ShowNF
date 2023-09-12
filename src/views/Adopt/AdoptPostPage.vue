@@ -24,20 +24,19 @@ import apiTest from '@/api/test';
 
 export default {
     components: {
-        testPostId: "",
-        data: [],
 
     },
     data(){
         return {
-
+            testPostId: "",
+            data: [],
         }
     },
     methods: {
 
     },
     beforeCreate(){
-        apiTest.getAdoptPostDAO(testPostId)
+        apiTest.getAdoptPostDAO(this.testPostId)
         .then(response=>{
             console.log("getAdoptPostDAO : ", response);
             this.data = response.data;
