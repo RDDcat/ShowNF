@@ -59,7 +59,7 @@ export default{
         apiTest.getHotPosts()
         .then(response=>{
             console.log("response : ", response);
-            this.hot_data = response;
+            this.hot_data = response.data;
         })
         .catch(function (e){
             console.log(e);

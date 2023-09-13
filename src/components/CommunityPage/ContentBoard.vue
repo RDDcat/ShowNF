@@ -1,7 +1,7 @@
 <template> 
     <div class="board">
             <div class="board-title" @click="console.log(data)">
-                <div class="board-title-text">게시글</div>
+                <div class="board-title-text">{{title}} 게시판</div>
                 <div class="board-link"><img src="@/assets/logo.png"></div>
             </div>
             <div class="board-cards">                
