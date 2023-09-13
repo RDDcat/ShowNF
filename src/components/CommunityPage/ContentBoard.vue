@@ -1,27 +1,36 @@
-<template>
+<template> 
     <div class="board">
-        {{data}}
-            <div class="board-title">
-                <div class="board-title-text">HOT 게시글</div>
+            <div class="board-title" @click="console.log(data)">
+                <div class="board-title-text">게시글</div>
                 <div class="board-link"><img src="@/assets/logo.png"></div>
             </div>
-            <div class="board-cards">
-                <CommunityContentCard />
-                <CommunityContentCard />
-                <CommunityContentCard />
-                <CommunityContentCard />
+            <div class="board-cards">                
+                <div class="board-card" v-for="(content, index) in data.content" :key="index">
+                    <img src="@/assets/logo.png">
+                    <h2 v-if="content.title ">{{ content.title }}</h2>
+                    <div class="user-name">백설</div>
+                </div>
             </div>
         </div>
 </template>
 <script>
-import CommunityContentCard from "@/components/CommunityPage/CommunityContentCard.vue";
+
 
 export default{
     props: {
+        title: [],
         data: [],
     },
     components: {
-        CommunityContentCard,
+
+    },
+    data(){
+        return {
+            
+        }
+    },
+    methods: {
+
     },
 }
 </script>
@@ -41,6 +50,11 @@ export default{
 .board-cards{    
     overflow: auto;
     display: flex;
+}
+.board-card{
+    margin-top: 4px;
+    margin-bottom: 8px;
+    margin-right:6px;
 }
 .board-link{
     width: 32px;
