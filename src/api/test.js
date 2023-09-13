@@ -12,9 +12,13 @@ export default {
     },
 
     // 분양
-    // 분양게시글 (인데 당장은 커뮤니티 게시글)
-    getAdoptPostDAO: function(postId){
-        return axios.get(BASE_URL + `post/` + postId);
+    // 분양 게시글 전체 조회
+    getSales: function(){
+        return axios.get(BASE_URL + `sale/all`);
+    },
+    // 분양 게시글 개별 조회
+    getSale: function(saleId){
+        return axios.get(BASE_URL + `sale/` + saleId);
     },
 
     // 커뮤니티
@@ -25,7 +29,6 @@ export default {
     },
     // 커뮤니티 카테고리별 조회
     getPosts: function(category){
-        console.log(BASE_URL + `post/category/` + category);
         return axios.get(BASE_URL + `post/category/` + category);
     },
 

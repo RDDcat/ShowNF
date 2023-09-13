@@ -8,14 +8,14 @@
     </div>
 
     <!-- 이미지 배너 -->
-    <div class="images">
-        <div class="image">
-            <img :src="content_img">
+    <div class="images" v-if="data">
+        <div class="image" v-for="(content_img, index) in content_imgs" :key="index">
+            <img :src="content_img.imageUrl">
         </div>
     </div>
 
     <!-- 조회 게시글 내용 -->
-
+    {{content_imgs}}
 
     <!-- 하단 플로팅 바 (좋아요, 채팅하기) -->
 
@@ -29,25 +29,21 @@ export default {
     },
     data(){
         return {
-            testPostId: "0",
             data: [],
-            content_img: "",
+            content_imgs: [],
         }
     },
     methods: {
 
     },
     mounted(){
-        apiTest.getAdoptPostDAO(this.testPostId)
+        console.log('history.state.saleId: ', history.state.saleId)
+
+        apiTest.getSale(history.state.saleId)
         .then(response=>{
+            console.log('response : ', response)
             this.data = response.data;
-            console.log("this.data.content : ", this.data.content);
-            var object1 = JSON.parse(this.data.content);
-            console.log("this.object1 : ", object1);
-            console.log("this.object1 : ", object1[0]);
-            
-            this.content_img = this.data.content[0].imageUrl;
-            console.log("this.content_img : ", this.content_img);
+            this.content_imgs = JSON.parse(response.data.imageUrl);
         })
         .catch(function (e){
             console.log(e);

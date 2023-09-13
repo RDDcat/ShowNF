@@ -1,6 +1,7 @@
 <template>
     <div class="sample">this page for copy</div>
-    {{data}}
+    <img :src="data.imageUrl">
+    {{data.content}}
 </template>
 <script>
 

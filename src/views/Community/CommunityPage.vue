@@ -58,7 +58,6 @@ export default{
         // 핫게시판 데이터 가져오기
         apiTest.getHotPosts()
         .then(response=>{
-            console.log("response : ", response);
             this.hot_data = response.data;
         })
         .catch(function (e){
@@ -70,15 +69,12 @@ export default{
         for (let i = 0; i < categories.length; i++) {
             apiTest.getPosts(categories[i])
             .then(response=>{
-                console.log("category : ", i);
                 this.data[i] = response.data;
             })
             .catch(function (e){
                 console.log(e);
             });
         }
-        
-        console.log("data : ", this.data);
     }
 };
 </script>

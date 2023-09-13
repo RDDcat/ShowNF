@@ -6,7 +6,8 @@
             </div>
             <div class="board-cards">                
                 <div class="board-card" v-for="(content, index) in data.content" :key="index" @click="movePostPage(content.postId)">
-                    <img src="@/assets/logo.png">
+                    <img src="@/assets/logo.png" v-if="!content.imageUrl"> 
+                    <img :src="content.imageUrl">
                     <h2 v-if="content.title ">{{ content.title }}</h2>
                     <div class="user-name">{{ content.userId }}</div>
                 </div>
