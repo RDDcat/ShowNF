@@ -5,10 +5,10 @@
                 <div class="board-link"><img src="@/assets/logo.png"></div>
             </div>
             <div class="board-cards">                
-                <div class="board-card" v-for="(content, index) in data.content" :key="index">
+                <div class="board-card" v-for="(content, index) in data.content" :key="index" @click="movePostPage(content.postId)">
                     <img src="@/assets/logo.png">
                     <h2 v-if="content.title ">{{ content.title }}</h2>
-                    <div class="user-name">백설</div>
+                    <div class="user-name">{{ content.userId }}</div>
                 </div>
             </div>
         </div>
@@ -30,7 +30,14 @@ export default{
         }
     },
     methods: {
-
+        movePostPage(_postId){
+            this.$router.push({
+                path : '/community/post' ,
+                state : {
+                    postId : _postId, 
+                }
+            })
+        }
     },
 }
 </script>

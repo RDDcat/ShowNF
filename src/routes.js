@@ -6,6 +6,7 @@ import AdoptPostPage from '@/views/Adopt/AdoptPostPage'
 
 import CommunityPage from '@/views/Community/CommunityPage'
 import CommunityAddPostPage from '@/views/Community/CommunityAddPostPage'
+import CommunityPostPage from '@/views/Community/CommunityPostPage'
 
 import SwipePage from '@/views/SwipePage'
 
@@ -42,6 +43,7 @@ const router = createRouter({
         { path: "/adopt/post", component: AdoptPostPage},
 
         { path: "/community", component: CommunityPage},
+        { path: "/community/post", component: CommunityPostPage},
         { path: "/community/add", component: CommunityAddPostPage},
 
 
