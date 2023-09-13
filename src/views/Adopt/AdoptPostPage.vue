@@ -15,9 +15,29 @@
     </div>
 
     <!-- 조회 게시글 내용 -->
-    {{content_imgs}}
+    
+    <p>제목(개체명) {{data.individual}}</p>
+    <p>생일: {{data.birthday}}</p>
+    <p>종: {{data.firstSpecies}}</p>
+    <p>종: {{data.secondSpecies}}</p>
+    <p>무게 : {{data.weight}}</p>
+    <p>가격 : {{data.price}}</p>
+    <p>좋아요 : {{data.heartCount}}</p>
 
     <!-- 하단 플로팅 바 (좋아요, 채팅하기) -->
+    <div class="adopt-float">
+        <div class="heart">
+
+        </div>
+        <div class="link" >
+            <div class="link-naver" v-if="data.salePlatform=='Naver'">
+                네이버
+            </div>
+            <div class="link-naver" v-if="data.salePlatform=='Original'">
+                채팅하기
+            </div>
+        </div>
+    </div>
 
 </template>
 <script>
