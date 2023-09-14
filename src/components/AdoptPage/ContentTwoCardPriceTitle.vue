@@ -62,6 +62,12 @@ export default {
     width: 40vw;
     height: 24vh;
 }
+.content-card-img img{    
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
 
 .content-card-imgtag{
     width: 100%;

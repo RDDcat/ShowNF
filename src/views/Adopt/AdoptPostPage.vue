@@ -99,6 +99,8 @@ export default {
     
 }
 .image img{
-
+    width: 100vw;
+    height: 300px;
+    object-fit: contain;
 }
 </style>
