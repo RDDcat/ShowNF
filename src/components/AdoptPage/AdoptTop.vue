@@ -2,7 +2,7 @@
     <div class="top-balance"></div>
     <div class="top">
         <div class="balance"></div>
-        <div class="top-title">커뮤니티</div>
+        <div class="top-title">분양 / 입양</div>
         <div class="balance"></div>
     </div>
 </template>
