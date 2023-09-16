@@ -1,24 +1,7 @@
 # shownf
 
-## Project setup
-```
-npm install
-```
+이 프로젝트는 private 레포로 이동하였습니다. 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+앞으로의 변경사항은 외부에 공개되지 않습니다.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[ShowNF]("https://github.com/ShowNF")
